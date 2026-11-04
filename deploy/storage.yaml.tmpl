@@ -1,0 +1,96 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: hpc-system
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ganesha
+  namespace: hpc-system
+data:
+  ganesha.conf: |
+    NFS_CORE_PARAM { Protocols = 4; }
+    NFSv4 { Grace_Period = 10; }
+    EXPORT {
+      Export_Id = 1;
+      Path = /export;
+      Pseudo = /shared;
+      Access_Type = RW;
+      Squash = Root_Squash;
+      Protocols = 4;
+      Transports = TCP;
+      SecType = sys;
+      FSAL { Name = VFS; }
+    }
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nfs
+  namespace: hpc-system
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels: {app: hpc-nfs}
+  template:
+    metadata:
+      labels: {app: hpc-nfs}
+    spec:
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
+      nodeSelector: {hpc.local/role: head}
+      tolerations:
+        - key: node-role.kubernetes.io/control-plane
+          operator: Exists
+          effect: NoSchedule
+      containers:
+        - name: nfs
+          image: hpc-nfs:local
+          imagePullPolicy: Never
+          securityContext:
+            privileged: true
+          resources:
+            requests: {cpu: 25m, memory: 32Mi}
+            limits: {cpu: 150m, memory: 128Mi}
+          readinessProbe:
+            tcpSocket: {port: 2049}
+            initialDelaySeconds: 3
+            periodSeconds: 3
+          volumeMounts:
+            - {name: export, mountPath: /export}
+            - {name: config, mountPath: /etc/ganesha/ganesha.conf, subPath: ganesha.conf}
+      volumes:
+        - name: export
+          hostPath: {path: /srv/hpc, type: Directory}
+        - name: config
+          configMap: {name: ganesha}
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ${CLUSTER_NAME}-shared
+spec:
+  capacity: {storage: 5Gi}
+  accessModes: [ReadWriteMany]
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: ""
+  mountOptions: [nfsvers=4.1, proto=tcp, hard, timeo=50, retrans=2]
+  claimRef: {namespace: hpc, name: shared}
+  nfs:
+    server: ${HEAD_IP}
+    path: /shared
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: shared
+  namespace: hpc
+spec:
+  accessModes: [ReadWriteMany]
+  storageClassName: ""
+  volumeName: ${CLUSTER_NAME}-shared
+  resources:
+    requests: {storage: 5Gi}

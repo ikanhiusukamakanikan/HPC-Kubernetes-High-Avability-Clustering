@@ -1,0 +1,23 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+    labels:
+      hpc.local/role: head
+    extraPortMappings:
+      - containerPort: 22
+        hostPort: ${SSH_PORT}
+        listenAddress: 127.0.0.1
+        protocol: TCP
+    extraMounts:
+      - hostPath: ${SHARED_DIR_JSON}
+        containerPath: /srv/hpc
+  - role: worker
+    labels:
+      hpc.local/role: compute
+  - role: worker
+    labels:
+      hpc.local/role: compute
+  - role: worker
+    labels:
+      hpc.local/role: compute
