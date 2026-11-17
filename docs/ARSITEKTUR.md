@@ -42,7 +42,7 @@ Dengan anggaran default 800m CPU per worker dan request 500m per pekerjaan, dua 
 
 `docker update` menerapkan quota CPU dan hard memory limit node. Node kind dapat melaporkan kapasitas host kepada scheduler. Karena itu skrip menghitung `kubeReserved` worker dari kapasitas yang dilaporkan dikurangi target anggaran Pod. Kubelet kemudian mengiklankan allocatable yang sesuai dan membatasi cgroup Pod.
 
-`evictionHard.memory.available` worker diatur `0Mi` khusus lab agar reservasi memori tidak dihitung dua kali terhadap anggaran Pod yang kecil; hard limit Docker tetap berlaku. Ini meningkatkan risiko OOM saat beban melebihi anggaran. Head mempertahankan konfigurasi allocatable bawaan dan hanya diberi hard limit Docker; pekerjaan pengguna tidak dijadwalkan ke head. Konfigurasi ini adalah penyesuaian kind untuk eksperimen, bukan resep cluster produksi.
+`evictionHard.memory.available` worker diatur `1Mi` (kubelet menolak nilai 0) khusus lab agar reservasi memori tidak dihitung dua kali terhadap anggaran Pod yang kecil; hard limit Docker tetap berlaku. Ini meningkatkan risiko OOM saat beban melebihi anggaran. Head mempertahankan konfigurasi allocatable bawaan dan hanya diberi hard limit Docker; pekerjaan pengguna tidak dijadwalkan ke head. Konfigurasi ini adalah penyesuaian kind untuk eksperimen, bukan resep cluster produksi.
 
 ## Pemulihan pekerjaan
 

@@ -39,7 +39,7 @@ def main():
         cfg = yaml.safe_load(run('docker', 'exec', name, 'cat', '/var/lib/kubelet/config.yaml'))
         cfg['kubeReserved'] = {'cpu': f'{reserve_cpu}m', 'memory': f'{reserve_memory}Mi'}
         cfg.pop('systemReserved', None)
-        cfg['evictionHard'] = {'memory.available': '0Mi', 'nodefs.available': '5%',
+        cfg['evictionHard'] = {'memory.available': '1Mi', 'nodefs.available': '5%',
                                'imagefs.available': '5%', 'nodefs.inodesFree': '5%'}
         cfg['enforceNodeAllocatable'] = ['pods']
         path = Path(os.environ['ROOT']) / '.runtime' / (name + '-kubelet.yaml')
