@@ -1,0 +1,10 @@
+scenario,rep,jobs,complete,verified,attempts,distribution,queue_max_s,turnaround_median_s,fifo_in_order,recovery_s,replacement_node,ok,problems
+normal,1,9,9,9,9,worker:3 / worker2:3 / worker3:3,40.0,44.0,,,,True,
+normal,2,9,9,9,9,worker:3 / worker2:3 / worker3:3,40.0,44.0,,,,True,
+normal,3,9,9,9,9,worker:3 / worker2:3 / worker3:3,40.0,44.0,,,,True,
+fifo,1,6,6,6,6,worker2:5 / worker3:1,84.0,60.0,True,,,True,
+fifo,2,6,6,6,6,worker2:5 / worker3:1,83.0,60.5,True,,,True,
+fifo,3,6,6,6,6,worker2:6,80.0,58.0,True,,,True,
+recovery,1,1,1,1,2,worker2:1 / worker3:1,0.0,276.0,,146.672,hpc-worker3,True,
+recovery,2,1,1,1,2,worker2:1 / worker3:1,0.0,272.0,,142.212,hpc-worker3,True,
+recovery,3,1,1,1,2,worker2:1 / worker3:1,0.0,273.0,,142.963,hpc-worker3,True,

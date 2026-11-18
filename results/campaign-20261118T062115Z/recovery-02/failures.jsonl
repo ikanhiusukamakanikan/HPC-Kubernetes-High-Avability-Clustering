@@ -1,0 +1,2 @@
+{"event": "stop_requested", "node": "hpc-worker2", "time": "2026-11-18T06:37:09.604340+00:00"}
+{"event": "stopped", "node": "hpc-worker2", "time": "2026-11-18T06:37:10.241278+00:00"}

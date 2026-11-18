@@ -1,0 +1,22 @@
+{
+  "scenario": "recovery",
+  "rep": 3,
+  "prefix": "recovery11180621r3",
+  "jobs": 1,
+  "complete": 1,
+  "verified": 1,
+  "attempts": 2,
+  "per_node": {
+    "hpc-worker2": 1,
+    "hpc-worker3": 1
+  },
+  "queue_max_s": 0.0,
+  "turnaround_median_s": 273.0,
+  "contaminated": false,
+  "failure_cases": 1,
+  "failed_node": "hpc-worker2",
+  "replacement_node": "hpc-worker3",
+  "recovery_s": 142.963,
+  "ok": true,
+  "problems": []
+}

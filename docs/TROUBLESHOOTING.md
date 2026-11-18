@@ -76,3 +76,34 @@ kubectl -n kueue-system get deployment kueue-controller-manager -o yaml
 Proses normal mencakup deteksi node, toleration, tambahan masa tunggu controller pemulihan, dan startup ulang. Timeout 900 detik pada panduan adalah batas observasi, bukan SLA. Jika melewatinya, simpan snapshot/log dan laporkan skenario gagal. Jangan menghapus finalizer atau force-delete Pod untuk membuat hasil eksperimen tampak berhasil. Setelah bukti disimpan, hidupkan node kembali untuk membersihkan kondisi terminal melalui kubelet.
 
 Rujukan: [mekanisme failure recovery Kueue](https://kueue.sigs.k8s.io/docs/tasks/manage/setup_failure_recovery/).
+
+## CSV atau summary.json menampilkan terlalu banyak Job
+
+Collector merekam setiap Job `hpc-compute` yang ada di cluster, sehingga Job dari run sebelumnya ikut terhitung. Gejalanya: `jobs_observed` lebih besar dari Job yang dikirim, dan `failure_cases` lebih dari satu pada run dengan satu kegagalan. Pemisahan manual: filter `jobs.csv` dan `attempts.csv` berdasarkan awalan nama Job. Pencegahan: gunakan `bash scripts/run-campaign.sh`, atau bersihkan Job lama sebelum tiap run manual:
+
+```bash
+kubectl -n hpc delete jobs -l app=hpc-compute --wait=true
+kubectl -n hpc get jobs,pods,workloads     # harus kosong
+```
+
+Berkas `current.tmp` pada folder hasil hanyalah berkas sementara collector, bukan bukti.
+
+## run-campaign.sh berhenti di tengah
+
+Pada Ctrl+C atau error, skrip otomatis menghentikan collector, menghidupkan kembali worker yang dimatikan, dan mengembalikan kuota antrean. Bila terminal tertutup paksa sehingga pembersihan tidak sempat berjalan, periksa dan pulihkan manual:
+
+```bash
+export KUBECONFIG="$PWD/.runtime/kubeconfig"
+kubectl get nodes                                  # ada worker NotReady?
+docker ps -a --filter name=hpc-worker              # lalu: bash scripts/restore-worker.sh NAMA_WORKER
+kubectl describe clusterqueue hpc-queue | grep -i -A2 nominal   # kuota harus 1500m dan 384Mi
+# kembalikan kuota bila tidak sesuai (dijalankan dalam bash -c agar terminal aman):
+bash -c 'source scripts/common.sh; render "$ROOT/deploy/queue.yaml.tmpl" > "$ROOT/.runtime/queue.yaml"; k apply -f "$ROOT/.runtime/queue.yaml"'
+pgrep -f scripts/collect.sh                        # collector yatim? hentikan dengan kill
+```
+
+Skrip menolak berjalan pada cluster yang kotor: bila pesan "Old Jobs/Pods/Workloads are still present" muncul, periksa Pod yang tertahan `Terminating` pada node yang mati (hidupkan node, lalu tunggu), kemudian ulangi.
+
+## Skenario recovery gagal pada run otomatis
+
+Run ditandai `CHECK` bila tidak tepat satu kasus kegagalan, pengganti berada di node yang sama, atau Job tidak Complete. Baca `problems` di `run-metrics.json` pada folder run, lalu `failures.jsonl`, `events.json`, dan `collector.log`. Jangan menghapus finalizer atau force-delete Pod secara manual; ulangi run setelah semua node `Ready`.

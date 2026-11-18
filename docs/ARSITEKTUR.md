@@ -54,6 +54,14 @@ Fitur tersebut masih Alpha pada versi yang ditetapkan. Ia dipakai hanya untuk pe
 
 Perhitungan selalu dimulai ulang. Tidak ada checkpoint atau migrasi proses hidup. Berkas parsial tidak dianggap sebagai hasil sukses; hanya `result.json` dengan `verified: true` yang menyatakan keluaran terverifikasi. Kondisi Job `Complete` juga harus diperiksa untuk keberhasilan cluster.
 
+## Catatan dari hasil pengukuran
+
+Ringkasan hasil ada di [PENGUJIAN.md](PENGUJIAN.md). Tiga pengamatan relevan untuk arsitektur:
+
+- **Waktu pemulihan sekitar 145 s** terdiri dari deteksi node sekitar 49 s, toleration 30 s, masa tunggu Kueue sekitar 65 s, dan sekitar 1 s penjadwalan ulang (run `recovery-01`). Hanya `EVICTION_SECONDS` yang dapat diubah di repositori ini; menurunkannya mempercepat pemulihan tetapi membuat Pod lebih mudah diusir saat node hanya terganggu sebentar.
+- **Distribusi** merata 3 / 3 / 3 saat tiga Job berjalan bersamaan, tetapi pada kuota satu pekerjaan hampir semua Job mendarat di satu worker. Topology spread adalah preferensi (`ScheduleAnyway`), bukan jaminan; penyebab pastinya belum dibuktikan.
+- **Kuota Kueue tidak mengecil saat worker mati**, sehingga Job admitted dapat Pending sampai worker sehat bebas.
+
 ## Batasan evaluasi
 
 Head, NFS, host Docker, dan laptop adalah titik tunggal kegagalan. Tidak ada pengujian kegagalan head, storage failover, multi-control-plane, MPI, GPU, atau autoscaling. Batas memori head 1 GiB perlu dibuktikan pada lingkungan aktual dan mungkin perlu dinaikkan.

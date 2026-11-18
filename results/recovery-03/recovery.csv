@@ -1,4 +1,0 @@
-job,failed_node,failure_at,replacement_node,replacement_started_at,recovery_seconds,verified
-recovery01,hpc-worker,2026-11-17T18:21:27.921428+00:00,,,,False
-recovery02,hpc-worker,2026-11-17T18:21:27.921428+00:00,,,,False
-recovery03,hpc-worker,2026-11-17T18:21:27.921428+00:00,hpc-worker3,2026-11-17T18:23:54.793399+00:00,146.872,True

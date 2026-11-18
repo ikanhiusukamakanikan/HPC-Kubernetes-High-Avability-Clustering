@@ -1,0 +1,10 @@
+{
+  "job": "recovery11180621r1",
+  "pod_uid": "2a5443c0-afc2-40e2-bb03-282367516c02",
+  "pod": "recovery11180621r1-cpkl7",
+  "node": "hpc-worker2",
+  "started_at": "2026-11-18T06:32:08.976242+00:00",
+  "status": "Running",
+  "limit": 50000,
+  "minimum_seconds": 120
+}

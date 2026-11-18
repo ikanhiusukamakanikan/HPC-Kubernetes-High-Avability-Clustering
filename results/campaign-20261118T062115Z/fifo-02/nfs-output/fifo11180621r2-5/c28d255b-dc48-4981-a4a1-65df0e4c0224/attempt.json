@@ -1,0 +1,16 @@
+{
+  "job": "fifo11180621r2-5",
+  "pod_uid": "c28d255b-dc48-4981-a4a1-65df0e4c0224",
+  "pod": "fifo11180621r2-5-tggwn",
+  "node": "hpc-worker2",
+  "started_at": "2026-11-18T06:29:14.117424+00:00",
+  "status": "Succeeded",
+  "limit": 50000,
+  "minimum_seconds": 15,
+  "finished_at": "2026-11-18T06:29:29.179952+00:00",
+  "cycles": 178,
+  "elapsed_seconds": 15.050699475999863,
+  "prime_count": 5133,
+  "expected_count": 5133,
+  "verified": true
+}

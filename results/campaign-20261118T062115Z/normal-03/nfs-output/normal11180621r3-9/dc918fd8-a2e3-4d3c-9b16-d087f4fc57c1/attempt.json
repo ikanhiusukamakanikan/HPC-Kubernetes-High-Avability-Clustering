@@ -1,0 +1,16 @@
+{
+  "job": "normal11180621r3-9",
+  "pod_uid": "dc918fd8-a2e3-4d3c-9b16-d087f4fc57c1",
+  "pod": "normal11180621r3-9-tf445",
+  "node": "hpc-worker",
+  "started_at": "2026-11-18T06:25:11.358768+00:00",
+  "status": "Succeeded",
+  "limit": 50000,
+  "minimum_seconds": 20,
+  "finished_at": "2026-11-18T06:25:31.375720+00:00",
+  "cycles": 203,
+  "elapsed_seconds": 20.00763113300013,
+  "prime_count": 5133,
+  "expected_count": 5133,
+  "verified": true
+}

@@ -132,6 +132,7 @@ data/shared/
     result.json                  hasil terverifikasi dari percobaan sukses
   logs/                          tempat tambahan untuk arsip pengguna
 results/<run>/                   snapshot cluster dan laporan CSV
+results/campaign-<waktu>/        keluaran run-campaign.sh (satu folder per run + ringkasan)
 ```
 
 Pekerjaan prima menggunakan parameter CLI; tidak membutuhkan berkas input. Direktori input tersedia untuk pengembangan workload berikutnya. `attempt.json` yang masih `Running` setelah worker mati berarti proses tidak sempat menulis status akhir; bandingkan dengan snapshot Kubernetes. Jangan menafsirkan nilai itu sebagai proses masih hidup.
@@ -191,10 +192,25 @@ docker update --cpus "$HEAD_CPUS" --memory "${HEAD_MEMORY_MIB}m" \
 
 Perubahan worker sebaiknya memakai rebuild agar allocatable, kuota, dan konfigurasi CLI di head tetap konsisten. Perubahan `SSH_PORT`, `SHARED_DIR`, image node, atau nama cluster juga memerlukan rebuild.
 
+## Menjalankan seluruh pengujian sekaligus
+
+Setelah smoke test lulus, `bash scripts/run-campaign.sh` menjalankan skenario normal, FIFO, dan recovery masing-masing tiga kali tanpa data kumulatif, dengan hasil di `results/campaign-<waktu>/`. Penjelasan lengkap dan syarat lulus ada di [PENGUJIAN.md](PENGUJIAN.md). Untuk presentasi, lihat [DEMO.md](DEMO.md).
+
 ## Menghapus cluster
 
 ```bash
 bash scripts/teardown.sh --yes
 ```
 
-Tidak ada perintah penghapusan rekursif data di skrip proyek. Simpan hasil eksperimen sebelum membersihkannya secara manual.
+Skrip menjalankan `kind delete cluster --name hpc` (nama mengikuti `CLUSTER_NAME`). Ini menghapus keempat container node serta seluruh status Kubernetes (Job, antrean, Pod Kueue dan NFS). Direktori `data/shared/` (berkas NFS) dan `results/` tetap ada. Tanpa `--yes`, skrip menolak berjalan.
+
+Memeriksa bahwa cluster sudah hilang:
+
+```bash
+kind get clusters     # hpc tidak boleh tampil
+docker ps             # tidak ada hpc-control-plane atau hpc-worker*
+```
+
+Bila kind masih mencatat cluster yang sudah rusak, `kind delete cluster --name hpc` menghapusnya langsung. Membangun ulang: `bash scripts/check.sh` lalu `bash scripts/setup.sh`.
+
+Tidak ada perintah penghapusan rekursif data di skrip proyek. Simpan hasil eksperimen sebelum membersihkannya secara manual (misalnya `rm -rf data/shared/output`, yang dapat memerlukan `sudo` karena berkas dimiliki UID 1000).

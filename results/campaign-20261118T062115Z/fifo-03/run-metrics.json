@@ -1,0 +1,19 @@
+{
+  "scenario": "fifo",
+  "rep": 3,
+  "prefix": "fifo11180621r3-",
+  "jobs": 6,
+  "complete": 6,
+  "verified": 6,
+  "attempts": 6,
+  "per_node": {
+    "hpc-worker2": 6
+  },
+  "queue_max_s": 80.0,
+  "turnaround_median_s": 58.0,
+  "contaminated": false,
+  "fifo_in_order": true,
+  "fifo_ties": 0,
+  "ok": true,
+  "problems": []
+}

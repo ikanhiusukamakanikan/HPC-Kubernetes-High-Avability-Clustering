@@ -1,0 +1,20 @@
+{
+  "scenario": "normal",
+  "rep": 1,
+  "prefix": "normal11180621r1-",
+  "jobs": 9,
+  "complete": 9,
+  "verified": 9,
+  "attempts": 9,
+  "per_node": {
+    "hpc-worker": 3,
+    "hpc-worker2": 3,
+    "hpc-worker3": 3
+  },
+  "queue_max_s": 40.0,
+  "turnaround_median_s": 44.0,
+  "contaminated": false,
+  "even_split": true,
+  "ok": true,
+  "problems": []
+}

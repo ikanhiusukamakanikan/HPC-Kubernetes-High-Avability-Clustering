@@ -1,0 +1,2 @@
+job,failed_node,failure_at,replacement_node,replacement_started_at,recovery_seconds,verified
+recovery11180621r2,hpc-worker2,2026-11-18T06:37:09.604340+00:00,hpc-worker3,2026-11-18T06:39:31.815983+00:00,142.212,True

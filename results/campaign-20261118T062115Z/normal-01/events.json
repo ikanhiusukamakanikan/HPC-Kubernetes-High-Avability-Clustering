@@ -1,0 +1,4000 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "action": "QuotaReserved",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:21.967619Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-1-fd027",
+                "namespace": "hpc",
+                "resourceVersion": "1508",
+                "uid": "ab6879b9-744d-42a6-af5f-3f8adc377722"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Quota reserved in ClusterQueue hpc-queue, wait time since queued was 1s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:21Z",
+                "name": "job-normal11180621r1-1-fd027.18e90f6bc1964bbd",
+                "namespace": "hpc",
+                "resourceVersion": "1509",
+                "uid": "38f29237-193c-4a5e-af02-76aed193a999"
+            },
+            "reason": "QuotaReserved",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Admitted",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:21.967684Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-1-fd027",
+                "namespace": "hpc",
+                "resourceVersion": "1508",
+                "uid": "ab6879b9-744d-42a6-af5f-3f8adc377722"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by ClusterQueue hpc-queue, wait time since reservation was 1s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:21Z",
+                "name": "job-normal11180621r1-1-fd027.18e90f6bc19740b5",
+                "namespace": "hpc",
+                "resourceVersion": "1510",
+                "uid": "ee662c2f-b83f-45db-ae4f-51bb612ffaf3"
+            },
+            "reason": "Admitted",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "QuotaReserved",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:23.056420Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-2-eecc6",
+                "namespace": "hpc",
+                "resourceVersion": "1529",
+                "uid": "6ae82830-dc0a-4a54-b33b-839861270530"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Quota reserved in ClusterQueue hpc-queue, wait time since queued was 0s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "job-normal11180621r1-2-eecc6.18e90f6c027c0d20",
+                "namespace": "hpc",
+                "resourceVersion": "1531",
+                "uid": "3883a62a-9913-4efb-8f50-425e46ff1c38"
+            },
+            "reason": "QuotaReserved",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Admitted",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:23.056440Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-2-eecc6",
+                "namespace": "hpc",
+                "resourceVersion": "1529",
+                "uid": "6ae82830-dc0a-4a54-b33b-839861270530"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by ClusterQueue hpc-queue, wait time since reservation was 0s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "job-normal11180621r1-2-eecc6.18e90f6c027c56f2",
+                "namespace": "hpc",
+                "resourceVersion": "1530",
+                "uid": "3501ea33-863d-4a0d-9923-fc8860a1975d"
+            },
+            "reason": "Admitted",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "QuotaReserved",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:24.312207Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-3-2a7e1",
+                "namespace": "hpc",
+                "resourceVersion": "1558",
+                "uid": "965f2d8e-6d00-42e3-be2c-9135c1f0257a"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Quota reserved in ClusterQueue hpc-queue, wait time since queued was 0s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:24Z",
+                "name": "job-normal11180621r1-3-2a7e1.18e90f6c4d55db62",
+                "namespace": "hpc",
+                "resourceVersion": "1559",
+                "uid": "53aa34a3-72c3-4533-a658-b3c635ca3dd7"
+            },
+            "reason": "QuotaReserved",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Admitted",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:24.312228Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-3-2a7e1",
+                "namespace": "hpc",
+                "resourceVersion": "1558",
+                "uid": "965f2d8e-6d00-42e3-be2c-9135c1f0257a"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by ClusterQueue hpc-queue, wait time since reservation was 0s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:24Z",
+                "name": "job-normal11180621r1-3-2a7e1.18e90f6c4d56269e",
+                "namespace": "hpc",
+                "resourceVersion": "1560",
+                "uid": "7f7cd836-a24b-4613-a98a-ce24c5d2d9a6"
+            },
+            "reason": "Admitted",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "WaitingForQuota",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:25.606978Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-4-4444f",
+                "namespace": "hpc",
+                "resourceVersion": "1590",
+                "uid": "f98921d4-bf09-4bb6-a36a-3b4eb5318932"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "couldn't assign flavors to pod set main: insufficient unused quota for cpu in flavor hpc-compute, 500m more needed, insufficient unused quota for memory in flavor hpc-compute, 128Mi more needed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:25Z",
+                "name": "job-normal11180621r1-4-4444f.18e90f6c9a828004",
+                "namespace": "hpc",
+                "resourceVersion": "1595",
+                "uid": "26fe4a25-61d8-45ce-b1b0-0b89d6c58a11"
+            },
+            "reason": "WaitingForQuota",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Warning"
+        },
+        {
+            "action": "WaitingForQuota",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:25.607425Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-4-4444f",
+                "namespace": "hpc",
+                "resourceVersion": "1593",
+                "uid": "f98921d4-bf09-4bb6-a36a-3b4eb5318932"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "couldn't assign flavors to pod set main: insufficient unused quota for cpu in flavor hpc-compute, 500m more needed, insufficient unused quota for memory in flavor hpc-compute, 128Mi more needed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:25Z",
+                "name": "job-normal11180621r1-4-4444f.18e90f6c9a894c7d",
+                "namespace": "hpc",
+                "resourceVersion": "1659",
+                "uid": "04cf89b2-646e-4049-bd70-8b3a004c93a8"
+            },
+            "reason": "WaitingForQuota",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:21:25.608871Z"
+            },
+            "source": {},
+            "type": "Warning"
+        },
+        {
+            "action": "QuotaReserved",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:46.095107Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-4-4444f",
+                "namespace": "hpc",
+                "resourceVersion": "1697",
+                "uid": "f98921d4-bf09-4bb6-a36a-3b4eb5318932"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Quota reserved in ClusterQueue hpc-queue, wait time since queued was 21s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "job-normal11180621r1-4-4444f.18e90f715fb2820c",
+                "namespace": "hpc",
+                "resourceVersion": "1699",
+                "uid": "2c4ce353-e6ca-4b07-b965-664bfcdcc600"
+            },
+            "reason": "QuotaReserved",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Admitted",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:46.095123Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-4-4444f",
+                "namespace": "hpc",
+                "resourceVersion": "1697",
+                "uid": "f98921d4-bf09-4bb6-a36a-3b4eb5318932"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by ClusterQueue hpc-queue, wait time since reservation was 0s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "job-normal11180621r1-4-4444f.18e90f715fb2c0cf",
+                "namespace": "hpc",
+                "resourceVersion": "1698",
+                "uid": "84c2f574-ac22-40aa-80be-63d1e8fe737f"
+            },
+            "reason": "Admitted",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "WaitingForQuota",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:46.121201Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-5-f7862",
+                "namespace": "hpc",
+                "resourceVersion": "1604",
+                "uid": "8fbf44f4-b182-4058-9b8b-3119ab86d23c"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "couldn't assign flavors to pod set main: insufficient unused quota for cpu in flavor hpc-compute, 500m more needed, insufficient unused quota for memory in flavor hpc-compute, 128Mi more needed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "job-normal11180621r1-5-f7862.18e90f716140b028",
+                "namespace": "hpc",
+                "resourceVersion": "1702",
+                "uid": "f58eca30-442f-4a48-9c5d-64d9ee7d893c"
+            },
+            "reason": "WaitingForQuota",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Warning"
+        },
+        {
+            "action": "WaitingForQuota",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:46.121563Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-5-f7862",
+                "namespace": "hpc",
+                "resourceVersion": "1700",
+                "uid": "8fbf44f4-b182-4058-9b8b-3119ab86d23c"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "couldn't assign flavors to pod set main: insufficient unused quota for cpu in flavor hpc-compute, 500m more needed, insufficient unused quota for memory in flavor hpc-compute, 128Mi more needed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "job-normal11180621r1-5-f7862.18e90f71614632b6",
+                "namespace": "hpc",
+                "resourceVersion": "1809",
+                "uid": "f031de81-9aeb-4b71-90c5-a8787efd59eb"
+            },
+            "reason": "WaitingForQuota",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:21:46.123375Z"
+            },
+            "source": {},
+            "type": "Warning"
+        },
+        {
+            "action": "QuotaReserved",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:46.365413Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-5-f7862",
+                "namespace": "hpc",
+                "resourceVersion": "1721",
+                "uid": "8fbf44f4-b182-4058-9b8b-3119ab86d23c"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Quota reserved in ClusterQueue hpc-queue, wait time since queued was 20s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "job-normal11180621r1-5-f7862.18e90f716fcf0fcb",
+                "namespace": "hpc",
+                "resourceVersion": "1722",
+                "uid": "a64434ca-4e16-4534-b979-b737c4e30b68"
+            },
+            "reason": "QuotaReserved",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Admitted",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:46.366244Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-5-f7862",
+                "namespace": "hpc",
+                "resourceVersion": "1721",
+                "uid": "8fbf44f4-b182-4058-9b8b-3119ab86d23c"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by ClusterQueue hpc-queue, wait time since reservation was 0s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "job-normal11180621r1-5-f7862.18e90f716fdbcb3d",
+                "namespace": "hpc",
+                "resourceVersion": "1724",
+                "uid": "6f97c65b-14d3-40eb-b1df-b50c2cb18b35"
+            },
+            "reason": "Admitted",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "WaitingForQuota",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:46.379138Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-6-bfb90",
+                "namespace": "hpc",
+                "resourceVersion": "1616",
+                "uid": "9955b2f1-6593-4c8c-9509-a92f2b24a91b"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "couldn't assign flavors to pod set main: insufficient unused quota for cpu in flavor hpc-compute, 500m more needed, insufficient unused quota for memory in flavor hpc-compute, 128Mi more needed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "job-normal11180621r1-6-bfb90.18e90f7170a08afc",
+                "namespace": "hpc",
+                "resourceVersion": "1727",
+                "uid": "76d02175-12af-4149-9d3d-f33b5de33df9"
+            },
+            "reason": "WaitingForQuota",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Warning"
+        },
+        {
+            "action": "WaitingForQuota",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:46.380751Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-6-bfb90",
+                "namespace": "hpc",
+                "resourceVersion": "1723",
+                "uid": "9955b2f1-6593-4c8c-9509-a92f2b24a91b"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "couldn't assign flavors to pod set main: insufficient unused quota for cpu in flavor hpc-compute, 500m more needed, insufficient unused quota for memory in flavor hpc-compute, 128Mi more needed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "job-normal11180621r1-6-bfb90.18e90f7170b91d57",
+                "namespace": "hpc",
+                "resourceVersion": "1813",
+                "uid": "2842bcdf-28b3-4cae-be93-1b3383685553"
+            },
+            "reason": "WaitingForQuota",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:21:46.381021Z"
+            },
+            "source": {},
+            "type": "Warning"
+        },
+        {
+            "action": "QuotaReserved",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:48.383120Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-6-bfb90",
+                "namespace": "hpc",
+                "resourceVersion": "1763",
+                "uid": "9955b2f1-6593-4c8c-9509-a92f2b24a91b"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Quota reserved in ClusterQueue hpc-queue, wait time since queued was 20s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:48Z",
+                "name": "job-normal11180621r1-6-bfb90.18e90f71e812d67f",
+                "namespace": "hpc",
+                "resourceVersion": "1766",
+                "uid": "5ea49688-e281-48ed-b1a5-a777b75d938d"
+            },
+            "reason": "QuotaReserved",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Admitted",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:48.383146Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-6-bfb90",
+                "namespace": "hpc",
+                "resourceVersion": "1763",
+                "uid": "9955b2f1-6593-4c8c-9509-a92f2b24a91b"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by ClusterQueue hpc-queue, wait time since reservation was 0s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:48Z",
+                "name": "job-normal11180621r1-6-bfb90.18e90f71e81337b1",
+                "namespace": "hpc",
+                "resourceVersion": "1767",
+                "uid": "bead64d1-3b49-4647-87d4-e3233a3ce481"
+            },
+            "reason": "Admitted",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "WaitingForQuota",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:48.394656Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-7-cb43d",
+                "namespace": "hpc",
+                "resourceVersion": "1627",
+                "uid": "23787f14-a3d5-4a27-a76a-7cbad915d0d5"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "couldn't assign flavors to pod set main: insufficient unused quota for cpu in flavor hpc-compute, 500m more needed, insufficient unused quota for memory in flavor hpc-compute, 128Mi more needed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:48Z",
+                "name": "job-normal11180621r1-7-cb43d.18e90f71e8c2e85c",
+                "namespace": "hpc",
+                "resourceVersion": "1773",
+                "uid": "89bcf1a4-eaa0-4599-8fee-58df454a5ccc"
+            },
+            "reason": "WaitingForQuota",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:21:48.420827Z"
+            },
+            "source": {},
+            "type": "Warning"
+        },
+        {
+            "action": "WaitingForQuota",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:48.421179Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-7-cb43d",
+                "namespace": "hpc",
+                "resourceVersion": "1765",
+                "uid": "23787f14-a3d5-4a27-a76a-7cbad915d0d5"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "couldn't assign flavors to pod set main: insufficient unused quota for cpu in flavor hpc-compute, 500m more needed, insufficient unused quota for memory in flavor hpc-compute, 128Mi more needed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:48Z",
+                "name": "job-normal11180621r1-7-cb43d.18e90f71ea578d48",
+                "namespace": "hpc",
+                "resourceVersion": "1820",
+                "uid": "3678ac4f-f814-47c5-badc-eba91cc4fd4a"
+            },
+            "reason": "WaitingForQuota",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:21:48.423367Z"
+            },
+            "source": {},
+            "type": "Warning"
+        },
+        {
+            "action": "QuotaReserved",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:09.431281Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-7-cb43d",
+                "namespace": "hpc",
+                "resourceVersion": "1861",
+                "uid": "23787f14-a3d5-4a27-a76a-7cbad915d0d5"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Quota reserved in ClusterQueue hpc-queue, wait time since queued was 40s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:09Z",
+                "name": "job-normal11180621r1-7-cb43d.18e90f76cea447a8",
+                "namespace": "hpc",
+                "resourceVersion": "1863",
+                "uid": "1b6dbb3d-931a-4138-880b-d0ce3991249c"
+            },
+            "reason": "QuotaReserved",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Admitted",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:09.431319Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-7-cb43d",
+                "namespace": "hpc",
+                "resourceVersion": "1861",
+                "uid": "23787f14-a3d5-4a27-a76a-7cbad915d0d5"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by ClusterQueue hpc-queue, wait time since reservation was 0s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:09Z",
+                "name": "job-normal11180621r1-7-cb43d.18e90f76cea4d754",
+                "namespace": "hpc",
+                "resourceVersion": "1864",
+                "uid": "75e9b69d-9921-44e4-94f2-f63a384c94cc"
+            },
+            "reason": "Admitted",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "WaitingForQuota",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:09.435949Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-8-54096",
+                "namespace": "hpc",
+                "resourceVersion": "1639",
+                "uid": "df7a28b5-e080-486a-ad70-5e489f0e87d7"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "couldn't assign flavors to pod set main: insufficient unused quota for cpu in flavor hpc-compute, 500m more needed, insufficient unused quota for memory in flavor hpc-compute, 128Mi more needed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:09Z",
+                "name": "job-normal11180621r1-8-54096.18e90f76ceeb8a1e",
+                "namespace": "hpc",
+                "resourceVersion": "1867",
+                "uid": "8ab8032d-6a7e-4c46-a717-d1d42ff63c28"
+            },
+            "reason": "WaitingForQuota",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Warning"
+        },
+        {
+            "action": "WaitingForQuota",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:09.436642Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-8-54096",
+                "namespace": "hpc",
+                "resourceVersion": "1862",
+                "uid": "df7a28b5-e080-486a-ad70-5e489f0e87d7"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "couldn't assign flavors to pod set main: insufficient unused quota for cpu in flavor hpc-compute, 500m more needed, insufficient unused quota for memory in flavor hpc-compute, 128Mi more needed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:09Z",
+                "name": "job-normal11180621r1-8-54096.18e90f76cef61411",
+                "namespace": "hpc",
+                "resourceVersion": "1972",
+                "uid": "c53495ed-897e-425f-80f3-da4cf73da14c"
+            },
+            "reason": "WaitingForQuota",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:22:09.438648Z"
+            },
+            "source": {},
+            "type": "Warning"
+        },
+        {
+            "action": "QuotaReserved",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:10.190257Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-8-54096",
+                "namespace": "hpc",
+                "resourceVersion": "1889",
+                "uid": "df7a28b5-e080-486a-ad70-5e489f0e87d7"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Quota reserved in ClusterQueue hpc-queue, wait time since queued was 40s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "job-normal11180621r1-8-54096.18e90f76fbe15c64",
+                "namespace": "hpc",
+                "resourceVersion": "1892",
+                "uid": "06ab7993-1c42-45ae-bccd-be441db094de"
+            },
+            "reason": "QuotaReserved",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Admitted",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:10.190312Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-8-54096",
+                "namespace": "hpc",
+                "resourceVersion": "1889",
+                "uid": "df7a28b5-e080-486a-ad70-5e489f0e87d7"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by ClusterQueue hpc-queue, wait time since reservation was 0s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "job-normal11180621r1-8-54096.18e90f76fbe22ff9",
+                "namespace": "hpc",
+                "resourceVersion": "1891",
+                "uid": "a4ee5dee-c7c9-4b5b-8c38-43ef7b1b31e6"
+            },
+            "reason": "Admitted",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "WaitingForQuota",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:10.261339Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-9-d3f7e",
+                "namespace": "hpc",
+                "resourceVersion": "1649",
+                "uid": "f6fe4871-b25b-4020-949e-d08c46dc0b58"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "couldn't assign flavors to pod set main: insufficient unused quota for cpu in flavor hpc-compute, 500m more needed, insufficient unused quota for memory in flavor hpc-compute, 128Mi more needed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "job-normal11180621r1-9-d3f7e.18e90f77001dfb20",
+                "namespace": "hpc",
+                "resourceVersion": "1894",
+                "uid": "92b0b41a-c062-45ca-9fce-d2dd861b753d"
+            },
+            "reason": "WaitingForQuota",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Warning"
+        },
+        {
+            "action": "WaitingForQuota",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:10.262364Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-9-d3f7e",
+                "namespace": "hpc",
+                "resourceVersion": "1890",
+                "uid": "f6fe4871-b25b-4020-949e-d08c46dc0b58"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "couldn't assign flavors to pod set main: insufficient unused quota for cpu in flavor hpc-compute, 500m more needed, insufficient unused quota for memory in flavor hpc-compute, 128Mi more needed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "job-normal11180621r1-9-d3f7e.18e90f77002d9a01",
+                "namespace": "hpc",
+                "resourceVersion": "1975",
+                "uid": "9ba2fced-ea74-4a63-820d-e5636cb16164"
+            },
+            "reason": "WaitingForQuota",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:22:10.263006Z"
+            },
+            "source": {},
+            "type": "Warning"
+        },
+        {
+            "action": "QuotaReserved",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:12.427402Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-9-d3f7e",
+                "namespace": "hpc",
+                "resourceVersion": "1933",
+                "uid": "f6fe4871-b25b-4020-949e-d08c46dc0b58"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Quota reserved in ClusterQueue hpc-queue, wait time since queued was 40s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:12Z",
+                "name": "job-normal11180621r1-9-d3f7e.18e90f77813978bd",
+                "namespace": "hpc",
+                "resourceVersion": "1934",
+                "uid": "efb6f7ae-0ff8-481c-97db-87b585e8ca6b"
+            },
+            "reason": "QuotaReserved",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Admitted",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:12.427428Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "kueue.x-k8s.io/v1beta2",
+                "kind": "Workload",
+                "name": "job-normal11180621r1-9-d3f7e",
+                "namespace": "hpc",
+                "resourceVersion": "1933",
+                "uid": "f6fe4871-b25b-4020-949e-d08c46dc0b58"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by ClusterQueue hpc-queue, wait time since reservation was 0s",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:12Z",
+                "name": "job-normal11180621r1-9-d3f7e.18e90f778139d862",
+                "namespace": "hpc",
+                "resourceVersion": "1935",
+                "uid": "cfa3a74c-5e29-4767-9d5a-621762e50505"
+            },
+            "reason": "Admitted",
+            "reportingComponent": "kueue-admission",
+            "reportingInstance": "kueue-admission-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:22Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "normal11180621r1-1-8w9fd",
+                "namespace": "hpc",
+                "resourceVersion": "1513",
+                "uid": "fdfb7cc6-c278-481d-b0f5-e9477245bd82"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:22Z",
+            "message": "Successfully assigned hpc/normal11180621r1-1-8w9fd to hpc-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:22Z",
+                "name": "normal11180621r1-1-8w9fd.18e90f6bc40e0e02",
+                "namespace": "hpc",
+                "resourceVersion": "1518",
+                "uid": "7beb873a-95a0-4671-9dc5-49a3fe9c156a"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-1-8w9fd",
+                "namespace": "hpc",
+                "resourceVersion": "1517",
+                "uid": "fdfb7cc6-c278-481d-b0f5-e9477245bd82"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:23Z",
+            "message": "Container image \"hpc-compute:local\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "normal11180621r1-1-8w9fd.18e90f6c064120cf",
+                "namespace": "hpc",
+                "resourceVersion": "1542",
+                "uid": "292bff76-0695-43ad-b355-46f81a4fddfe"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-1-8w9fd",
+                "namespace": "hpc",
+                "resourceVersion": "1517",
+                "uid": "fdfb7cc6-c278-481d-b0f5-e9477245bd82"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:23Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "normal11180621r1-1-8w9fd.18e90f6c095facad",
+                "namespace": "hpc",
+                "resourceVersion": "1543",
+                "uid": "947a67a1-dd14-44e4-b8ca-369e1740b15c"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-1-8w9fd",
+                "namespace": "hpc",
+                "resourceVersion": "1517",
+                "uid": "fdfb7cc6-c278-481d-b0f5-e9477245bd82"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:23Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "normal11180621r1-1-8w9fd.18e90f6c0de8cbe7",
+                "namespace": "hpc",
+                "resourceVersion": "1544",
+                "uid": "7077a79b-9367-4a57-b4a2-2c2425e5edee"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:21Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-1",
+                "namespace": "hpc",
+                "resourceVersion": "1502",
+                "uid": "605e4dba-6b01-4f69-a4bb-ec238ee40ed3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:21Z",
+            "message": "Job suspended",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:21Z",
+                "name": "normal11180621r1-1.18e90f6bb918c72c",
+                "namespace": "hpc",
+                "resourceVersion": "1504",
+                "uid": "06b0b9ee-20b7-4798-bfae-a7909f3b91d9"
+            },
+            "reason": "Suspended",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "CreatedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:21.939283Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-1",
+                "namespace": "hpc",
+                "resourceVersion": "1502",
+                "uid": "605e4dba-6b01-4f69-a4bb-ec238ee40ed3"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Created Workload: hpc/job-normal11180621r1-1-fd027",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:21Z",
+                "name": "normal11180621r1-1.18e90f6bbfe5f7b2",
+                "namespace": "hpc",
+                "resourceVersion": "1507",
+                "uid": "3c193f9c-ac26-434b-8b54-ee756af0c4c7"
+            },
+            "reason": "CreatedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Started",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:21.979530Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-1",
+                "namespace": "hpc",
+                "resourceVersion": "1511",
+                "uid": "605e4dba-6b01-4f69-a4bb-ec238ee40ed3"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by clusterQueue hpc-queue",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:21Z",
+                "name": "normal11180621r1-1.18e90f6bc24c097d",
+                "namespace": "hpc",
+                "resourceVersion": "1512",
+                "uid": "5555b402-7a95-4e42-b2ff-a10be466250c"
+            },
+            "reason": "Started",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:21Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-1",
+                "namespace": "hpc",
+                "resourceVersion": "1511",
+                "uid": "605e4dba-6b01-4f69-a4bb-ec238ee40ed3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:21Z",
+            "message": "Created pod: normal11180621r1-1-8w9fd",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:21Z",
+                "name": "normal11180621r1-1.18e90f6bc32277f2",
+                "namespace": "hpc",
+                "resourceVersion": "1514",
+                "uid": "99e7be3e-0cfb-42a9-a972-b84078592344"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:21Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-1",
+                "namespace": "hpc",
+                "resourceVersion": "1511",
+                "uid": "605e4dba-6b01-4f69-a4bb-ec238ee40ed3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:21Z",
+            "message": "Job resumed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:21Z",
+                "name": "normal11180621r1-1.18e90f6bc32303f1",
+                "namespace": "hpc",
+                "resourceVersion": "1516",
+                "uid": "58bb9cd9-d81c-42b1-b7b7-6dff69b39b6b"
+            },
+            "reason": "Resumed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:46Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-1",
+                "namespace": "hpc",
+                "resourceVersion": "1689",
+                "uid": "605e4dba-6b01-4f69-a4bb-ec238ee40ed3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:46Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-1.18e90f715d8a7ac7",
+                "namespace": "hpc",
+                "resourceVersion": "1693",
+                "uid": "1b3b05b2-084b-40ca-b10f-d86a71b9206b"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "FinishedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:46.071819Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-1",
+                "namespace": "hpc",
+                "resourceVersion": "1692",
+                "uid": "605e4dba-6b01-4f69-a4bb-ec238ee40ed3"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Workload 'hpc/job-normal11180621r1-1-fd027' is declared finished",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-1.18e90f715e4f3441",
+                "namespace": "hpc",
+                "resourceVersion": "1815",
+                "uid": "b792eb5f-1bff-4823-b6d6-e97ea3608c38"
+            },
+            "reason": "FinishedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:21:46.072242Z"
+            },
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "normal11180621r1-2-htdx9",
+                "namespace": "hpc",
+                "resourceVersion": "1535",
+                "uid": "7ae0a5e0-0baf-45bf-b99a-637f23667a53"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:23Z",
+            "message": "Successfully assigned hpc/normal11180621r1-2-htdx9 to hpc-worker2",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "normal11180621r1-2-htdx9.18e90f6c057320a0",
+                "namespace": "hpc",
+                "resourceVersion": "1540",
+                "uid": "b13f52cd-904c-46f5-ac29-75c7db0984a5"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-2-htdx9",
+                "namespace": "hpc",
+                "resourceVersion": "1537",
+                "uid": "7ae0a5e0-0baf-45bf-b99a-637f23667a53"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:23Z",
+            "message": "Container image \"hpc-compute:local\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "normal11180621r1-2-htdx9.18e90f6c23bd203e",
+                "namespace": "hpc",
+                "resourceVersion": "1546",
+                "uid": "f4cd40c7-daa2-4316-8bd2-6ec61652e0d4"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker2",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-2-htdx9",
+                "namespace": "hpc",
+                "resourceVersion": "1537",
+                "uid": "7ae0a5e0-0baf-45bf-b99a-637f23667a53"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:23Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "normal11180621r1-2-htdx9.18e90f6c26744b14",
+                "namespace": "hpc",
+                "resourceVersion": "1547",
+                "uid": "8b7e5a4a-81d7-4ee1-b861-8586b5b07d62"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker2",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-2-htdx9",
+                "namespace": "hpc",
+                "resourceVersion": "1537",
+                "uid": "7ae0a5e0-0baf-45bf-b99a-637f23667a53"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:23Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "normal11180621r1-2-htdx9.18e90f6c2b4d700a",
+                "namespace": "hpc",
+                "resourceVersion": "1548",
+                "uid": "f2a7aa49-5235-48e1-aef2-a57303ebc9b8"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker2",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:23Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-2",
+                "namespace": "hpc",
+                "resourceVersion": "1524",
+                "uid": "faf2dbb0-f606-4704-94ec-0471e294d762"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:23Z",
+            "message": "Job suspended",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "normal11180621r1-2.18e90f6c00804a36",
+                "namespace": "hpc",
+                "resourceVersion": "1525",
+                "uid": "94349a55-a892-4ccc-90b8-2996e3190f10"
+            },
+            "reason": "Suspended",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "CreatedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:23.039600Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-2",
+                "namespace": "hpc",
+                "resourceVersion": "1524",
+                "uid": "faf2dbb0-f606-4704-94ec-0471e294d762"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Created Workload: hpc/job-normal11180621r1-2-eecc6",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "normal11180621r1-2.18e90f6c017b781d",
+                "namespace": "hpc",
+                "resourceVersion": "1528",
+                "uid": "a1b18cb8-679c-4012-921a-31d2dfa5a1f6"
+            },
+            "reason": "CreatedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Started",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:23.083736Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-2",
+                "namespace": "hpc",
+                "resourceVersion": "1533",
+                "uid": "faf2dbb0-f606-4704-94ec-0471e294d762"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by clusterQueue hpc-queue",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "normal11180621r1-2.18e90f6c041ce2b5",
+                "namespace": "hpc",
+                "resourceVersion": "1534",
+                "uid": "797e71a0-21fe-4652-8cfc-49f7fb087c35"
+            },
+            "reason": "Started",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:23Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-2",
+                "namespace": "hpc",
+                "resourceVersion": "1533",
+                "uid": "faf2dbb0-f606-4704-94ec-0471e294d762"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:23Z",
+            "message": "Created pod: normal11180621r1-2-htdx9",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "normal11180621r1-2.18e90f6c04d7bba4",
+                "namespace": "hpc",
+                "resourceVersion": "1536",
+                "uid": "939175b0-6641-4cfb-a9c8-bd32cf3a5d8d"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:23Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-2",
+                "namespace": "hpc",
+                "resourceVersion": "1533",
+                "uid": "faf2dbb0-f606-4704-94ec-0471e294d762"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:23Z",
+            "message": "Job resumed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:23Z",
+                "name": "normal11180621r1-2.18e90f6c04d82338",
+                "namespace": "hpc",
+                "resourceVersion": "1539",
+                "uid": "e78bb0c3-9254-482f-ac41-f61c9cc81f01"
+            },
+            "reason": "Resumed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:46Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-2",
+                "namespace": "hpc",
+                "resourceVersion": "1713",
+                "uid": "faf2dbb0-f606-4704-94ec-0471e294d762"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:46Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-2.18e90f716d7ae295",
+                "namespace": "hpc",
+                "resourceVersion": "1717",
+                "uid": "8c4fe620-00e5-4241-8b5c-8cd9c41e4051"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "FinishedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:46.339844Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-2",
+                "namespace": "hpc",
+                "resourceVersion": "1716",
+                "uid": "faf2dbb0-f606-4704-94ec-0471e294d762"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Workload 'hpc/job-normal11180621r1-2-eecc6' is declared finished",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-2.18e90f716e48f2fb",
+                "namespace": "hpc",
+                "resourceVersion": "1814",
+                "uid": "b883df5e-5cd1-4898-95f6-6f7dbc502e16"
+            },
+            "reason": "FinishedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:21:46.340713Z"
+            },
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "normal11180621r1-3-t4w77",
+                "namespace": "hpc",
+                "resourceVersion": "1564",
+                "uid": "7402a3a6-70e5-40ef-bfa2-c926d77ad854"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:24Z",
+            "message": "Successfully assigned hpc/normal11180621r1-3-t4w77 to hpc-worker3",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:24Z",
+                "name": "normal11180621r1-3-t4w77.18e90f6c50256f92",
+                "namespace": "hpc",
+                "resourceVersion": "1568",
+                "uid": "3c69228c-15ca-46a0-bb38-ee918ab22be1"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-3-t4w77",
+                "namespace": "hpc",
+                "resourceVersion": "1565",
+                "uid": "7402a3a6-70e5-40ef-bfa2-c926d77ad854"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:24Z",
+            "message": "Container image \"hpc-compute:local\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:24Z",
+                "name": "normal11180621r1-3-t4w77.18e90f6c6d7e6332",
+                "namespace": "hpc",
+                "resourceVersion": "1572",
+                "uid": "52110d2d-18b9-4aa3-be5f-e277491b17cf"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker3",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-3-t4w77",
+                "namespace": "hpc",
+                "resourceVersion": "1565",
+                "uid": "7402a3a6-70e5-40ef-bfa2-c926d77ad854"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:24Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:24Z",
+                "name": "normal11180621r1-3-t4w77.18e90f6c71d652dd",
+                "namespace": "hpc",
+                "resourceVersion": "1573",
+                "uid": "fd411653-02ac-4db9-a93e-646a91ee797e"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker3",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:25Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-3-t4w77",
+                "namespace": "hpc",
+                "resourceVersion": "1565",
+                "uid": "7402a3a6-70e5-40ef-bfa2-c926d77ad854"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:25Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:25Z",
+                "name": "normal11180621r1-3-t4w77.18e90f6c769b5411",
+                "namespace": "hpc",
+                "resourceVersion": "1576",
+                "uid": "530c037d-d1e1-4f7a-b95a-0e3e5ef8d2b3"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker3",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:24Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-3",
+                "namespace": "hpc",
+                "resourceVersion": "1553",
+                "uid": "7221692d-2342-46f7-abd9-166dda09945c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:24Z",
+            "message": "Job suspended",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:24Z",
+                "name": "normal11180621r1-3.18e90f6c4b6c7a1a",
+                "namespace": "hpc",
+                "resourceVersion": "1554",
+                "uid": "b1841a66-e65a-4f6d-9525-9eeaa34c16e1"
+            },
+            "reason": "Suspended",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "CreatedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:24.296676Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-3",
+                "namespace": "hpc",
+                "resourceVersion": "1553",
+                "uid": "7221692d-2342-46f7-abd9-166dda09945c"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Created Workload: hpc/job-normal11180621r1-3-2a7e1",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:24Z",
+                "name": "normal11180621r1-3.18e90f6c4c68ea64",
+                "namespace": "hpc",
+                "resourceVersion": "1557",
+                "uid": "1aa7bb5a-3942-42db-9787-69e948b0415c"
+            },
+            "reason": "CreatedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Started",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:24.338806Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-3",
+                "namespace": "hpc",
+                "resourceVersion": "1562",
+                "uid": "7221692d-2342-46f7-abd9-166dda09945c"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by clusterQueue hpc-queue",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:24Z",
+                "name": "normal11180621r1-3.18e90f6c4eebbac5",
+                "namespace": "hpc",
+                "resourceVersion": "1563",
+                "uid": "ecb75884-11de-48c9-a1f1-696a8ec9b8a2"
+            },
+            "reason": "Started",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:24Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-3",
+                "namespace": "hpc",
+                "resourceVersion": "1562",
+                "uid": "7221692d-2342-46f7-abd9-166dda09945c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:24Z",
+            "message": "Created pod: normal11180621r1-3-t4w77",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:24Z",
+                "name": "normal11180621r1-3.18e90f6c4fad69b4",
+                "namespace": "hpc",
+                "resourceVersion": "1566",
+                "uid": "5517bb43-b21a-408f-8eab-2d3bca998774"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:24Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-3",
+                "namespace": "hpc",
+                "resourceVersion": "1562",
+                "uid": "7221692d-2342-46f7-abd9-166dda09945c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:24Z",
+            "message": "Job resumed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:24Z",
+                "name": "normal11180621r1-3.18e90f6c4fae046a",
+                "namespace": "hpc",
+                "resourceVersion": "1569",
+                "uid": "c3a2b722-9e99-4e36-9640-131fc2a77878"
+            },
+            "reason": "Resumed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:48Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-3",
+                "namespace": "hpc",
+                "resourceVersion": "1755",
+                "uid": "7221692d-2342-46f7-abd9-166dda09945c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:48Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:48Z",
+                "name": "normal11180621r1-3.18e90f71e572ef90",
+                "namespace": "hpc",
+                "resourceVersion": "1760",
+                "uid": "f1ba6988-961e-4868-b653-c9196bb5384b"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "FinishedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:48.355672Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-3",
+                "namespace": "hpc",
+                "resourceVersion": "1759",
+                "uid": "7221692d-2342-46f7-abd9-166dda09945c"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Workload 'hpc/job-normal11180621r1-3-2a7e1' is declared finished",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:48Z",
+                "name": "normal11180621r1-3.18e90f71e67015df",
+                "namespace": "hpc",
+                "resourceVersion": "1823",
+                "uid": "32f19a2a-27cd-4954-a4cb-dc0c6068391c"
+            },
+            "reason": "FinishedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:21:48.356241Z"
+            },
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "normal11180621r1-4-smtdt",
+                "namespace": "hpc",
+                "resourceVersion": "1704",
+                "uid": "ebdcb059-d6c6-4982-b1ba-cc995b227641"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:46Z",
+            "message": "Successfully assigned hpc/normal11180621r1-4-smtdt to hpc-worker2",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-4-smtdt.18e90f7163b000ed",
+                "namespace": "hpc",
+                "resourceVersion": "1710",
+                "uid": "b55c0b21-349b-4414-8e1d-b4f10cb47640"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-4-smtdt",
+                "namespace": "hpc",
+                "resourceVersion": "1707",
+                "uid": "ebdcb059-d6c6-4982-b1ba-cc995b227641"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:46Z",
+            "message": "Container image \"hpc-compute:local\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-4-smtdt.18e90f7182b7ea2d",
+                "namespace": "hpc",
+                "resourceVersion": "1737",
+                "uid": "3c7daaca-12cc-402e-87bd-d785629e9c45"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker2",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-4-smtdt",
+                "namespace": "hpc",
+                "resourceVersion": "1707",
+                "uid": "ebdcb059-d6c6-4982-b1ba-cc995b227641"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:46Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-4-smtdt.18e90f718617dae5",
+                "namespace": "hpc",
+                "resourceVersion": "1738",
+                "uid": "9b0b2395-f0d9-455f-b368-b6a4320b295c"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker2",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-4-smtdt",
+                "namespace": "hpc",
+                "resourceVersion": "1707",
+                "uid": "ebdcb059-d6c6-4982-b1ba-cc995b227641"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:46Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-4-smtdt.18e90f718bf7cf46",
+                "namespace": "hpc",
+                "resourceVersion": "1739",
+                "uid": "17260eed-a666-470f-a568-c20fd3700872"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker2",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:25Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-4",
+                "namespace": "hpc",
+                "resourceVersion": "1587",
+                "uid": "9adc57b6-bf8a-44ab-99db-89f4b29bc030"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:25Z",
+            "message": "Job suspended",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:25Z",
+                "name": "normal11180621r1-4.18e90f6c978e76ff",
+                "namespace": "hpc",
+                "resourceVersion": "1588",
+                "uid": "baa6a195-6aba-4b12-8ff4-2238133938bc"
+            },
+            "reason": "Suspended",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "CreatedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:25.574204Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-4",
+                "namespace": "hpc",
+                "resourceVersion": "1587",
+                "uid": "9adc57b6-bf8a-44ab-99db-89f4b29bc030"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Created Workload: hpc/job-normal11180621r1-4-4444f",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:25Z",
+                "name": "normal11180621r1-4.18e90f6c988e746d",
+                "namespace": "hpc",
+                "resourceVersion": "1591",
+                "uid": "bbf68445-fc90-4205-a9d5-7628f984ea04"
+            },
+            "reason": "CreatedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Started",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:46.120562Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-4",
+                "namespace": "hpc",
+                "resourceVersion": "1701",
+                "uid": "9adc57b6-bf8a-44ab-99db-89f4b29bc030"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by clusterQueue hpc-queue",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-4.18e90f716136effd",
+                "namespace": "hpc",
+                "resourceVersion": "1703",
+                "uid": "315d01a8-97be-4734-aed8-be5476feb9b2"
+            },
+            "reason": "Started",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:46Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-4",
+                "namespace": "hpc",
+                "resourceVersion": "1701",
+                "uid": "9adc57b6-bf8a-44ab-99db-89f4b29bc030"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:46Z",
+            "message": "Created pod: normal11180621r1-4-smtdt",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-4.18e90f7162743759",
+                "namespace": "hpc",
+                "resourceVersion": "1706",
+                "uid": "44ea7a12-62f0-497d-a1e0-2e5ce27a0a4d"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:46Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-4",
+                "namespace": "hpc",
+                "resourceVersion": "1701",
+                "uid": "9adc57b6-bf8a-44ab-99db-89f4b29bc030"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:46Z",
+            "message": "Job resumed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-4.18e90f7162748998",
+                "namespace": "hpc",
+                "resourceVersion": "1709",
+                "uid": "939c2415-cd22-4191-b390-593d8ad629d1"
+            },
+            "reason": "Resumed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:09Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-4",
+                "namespace": "hpc",
+                "resourceVersion": "1851",
+                "uid": "9adc57b6-bf8a-44ab-99db-89f4b29bc030"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:09Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:09Z",
+                "name": "normal11180621r1-4.18e90f76cc0681f3",
+                "namespace": "hpc",
+                "resourceVersion": "1857",
+                "uid": "95c5dc6d-24e8-4263-97e7-107f4aa39685"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "FinishedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:09.403270Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-4",
+                "namespace": "hpc",
+                "resourceVersion": "1855",
+                "uid": "9adc57b6-bf8a-44ab-99db-89f4b29bc030"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Workload 'hpc/job-normal11180621r1-4-4444f' is declared finished",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:09Z",
+                "name": "normal11180621r1-4.18e90f76ccf8ec63",
+                "namespace": "hpc",
+                "resourceVersion": "1976",
+                "uid": "b378ff85-1963-49a6-8508-1146153c0767"
+            },
+            "reason": "FinishedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:22:09.403908Z"
+            },
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "normal11180621r1-5-nrzlj",
+                "namespace": "hpc",
+                "resourceVersion": "1729",
+                "uid": "03db8a57-2038-45cc-b177-051adb09979c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:46Z",
+            "message": "Successfully assigned hpc/normal11180621r1-5-nrzlj to hpc-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-5-nrzlj.18e90f71726d1dd5",
+                "namespace": "hpc",
+                "resourceVersion": "1734",
+                "uid": "9d0f304e-b7d9-492a-bf72-8d2855d09534"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-5-nrzlj",
+                "namespace": "hpc",
+                "resourceVersion": "1731",
+                "uid": "03db8a57-2038-45cc-b177-051adb09979c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:46Z",
+            "message": "Container image \"hpc-compute:local\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-5-nrzlj.18e90f7192c6a190",
+                "namespace": "hpc",
+                "resourceVersion": "1740",
+                "uid": "ddde156a-d89a-4b6b-8c6b-6d55f71dae81"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-5-nrzlj",
+                "namespace": "hpc",
+                "resourceVersion": "1731",
+                "uid": "03db8a57-2038-45cc-b177-051adb09979c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:47Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:47Z",
+                "name": "normal11180621r1-5-nrzlj.18e90f71960b9541",
+                "namespace": "hpc",
+                "resourceVersion": "1741",
+                "uid": "505ec010-027c-488d-a69d-8014b5def356"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-5-nrzlj",
+                "namespace": "hpc",
+                "resourceVersion": "1731",
+                "uid": "03db8a57-2038-45cc-b177-051adb09979c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:47Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:47Z",
+                "name": "normal11180621r1-5-nrzlj.18e90f719cdc3e58",
+                "namespace": "hpc",
+                "resourceVersion": "1746",
+                "uid": "170992ac-9834-4c26-9a66-a04e32840531"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:26Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-5",
+                "namespace": "hpc",
+                "resourceVersion": "1599",
+                "uid": "a17eaefd-712c-4d87-88b8-e6be6c1aa60e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:26Z",
+            "message": "Job suspended",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:26Z",
+                "name": "normal11180621r1-5.18e90f6ce4813116",
+                "namespace": "hpc",
+                "resourceVersion": "1600",
+                "uid": "a74164f3-4492-4d68-ab8c-277e91e0f727"
+            },
+            "reason": "Suspended",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "CreatedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:26.863893Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-5",
+                "namespace": "hpc",
+                "resourceVersion": "1599",
+                "uid": "a17eaefd-712c-4d87-88b8-e6be6c1aa60e"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Created Workload: hpc/job-normal11180621r1-5-f7862",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:26Z",
+                "name": "normal11180621r1-5.18e90f6ce56d8807",
+                "namespace": "hpc",
+                "resourceVersion": "1603",
+                "uid": "91893c83-2d02-4865-9c7a-54ef0b71c5a8"
+            },
+            "reason": "CreatedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Started",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:46.384479Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-5",
+                "namespace": "hpc",
+                "resourceVersion": "1725",
+                "uid": "a17eaefd-712c-4d87-88b8-e6be6c1aa60e"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by clusterQueue hpc-queue",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-5.18e90f7170f1fef6",
+                "namespace": "hpc",
+                "resourceVersion": "1728",
+                "uid": "74e3b404-6537-4c79-ac74-e20725a4b85f"
+            },
+            "reason": "Started",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:46Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-5",
+                "namespace": "hpc",
+                "resourceVersion": "1725",
+                "uid": "a17eaefd-712c-4d87-88b8-e6be6c1aa60e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:46Z",
+            "message": "Created pod: normal11180621r1-5-nrzlj",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-5.18e90f7171bfafc9",
+                "namespace": "hpc",
+                "resourceVersion": "1730",
+                "uid": "5db82f41-96ce-4b6c-8905-573813f995a6"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:46Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-5",
+                "namespace": "hpc",
+                "resourceVersion": "1725",
+                "uid": "a17eaefd-712c-4d87-88b8-e6be6c1aa60e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:46Z",
+            "message": "Job resumed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:46Z",
+                "name": "normal11180621r1-5.18e90f7171c01ba5",
+                "namespace": "hpc",
+                "resourceVersion": "1733",
+                "uid": "97e934a0-0d12-4b52-822f-e7edab17c68f"
+            },
+            "reason": "Resumed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:10Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-5",
+                "namespace": "hpc",
+                "resourceVersion": "1880",
+                "uid": "a17eaefd-712c-4d87-88b8-e6be6c1aa60e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:10Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "normal11180621r1-5.18e90f76f6cc27ad",
+                "namespace": "hpc",
+                "resourceVersion": "1884",
+                "uid": "1a640776-8c42-44bc-92bf-893def673494"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "FinishedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:10.162776Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-5",
+                "namespace": "hpc",
+                "resourceVersion": "1883",
+                "uid": "a17eaefd-712c-4d87-88b8-e6be6c1aa60e"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Workload 'hpc/job-normal11180621r1-5-f7862' is declared finished",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "normal11180621r1-5.18e90f76fa3e0d75",
+                "namespace": "hpc",
+                "resourceVersion": "1969",
+                "uid": "3100f31d-a096-4b7a-90c2-f402db07f557"
+            },
+            "reason": "FinishedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:22:10.164098Z"
+            },
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:48Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "normal11180621r1-6-hdmtq",
+                "namespace": "hpc",
+                "resourceVersion": "1772",
+                "uid": "a448d1ff-4d6e-40bf-949e-7a8076522905"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:48Z",
+            "message": "Successfully assigned hpc/normal11180621r1-6-hdmtq to hpc-worker3",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:48Z",
+                "name": "normal11180621r1-6-hdmtq.18e90f71ec996bfa",
+                "namespace": "hpc",
+                "resourceVersion": "1778",
+                "uid": "e51d5af8-7764-4efb-a4b2-d4fb8d492cc7"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:48Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-6-hdmtq",
+                "namespace": "hpc",
+                "resourceVersion": "1776",
+                "uid": "a448d1ff-4d6e-40bf-949e-7a8076522905"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:48Z",
+            "message": "Container image \"hpc-compute:local\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:48Z",
+                "name": "normal11180621r1-6-hdmtq.18e90f720ada3254",
+                "namespace": "hpc",
+                "resourceVersion": "1782",
+                "uid": "7b6861d8-2974-44b9-b784-9013a3935da0"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker3",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-6-hdmtq",
+                "namespace": "hpc",
+                "resourceVersion": "1776",
+                "uid": "a448d1ff-4d6e-40bf-949e-7a8076522905"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:49Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:49Z",
+                "name": "normal11180621r1-6-hdmtq.18e90f720e5a9262",
+                "namespace": "hpc",
+                "resourceVersion": "1784",
+                "uid": "fbc80faf-a984-4828-89db-f88d879c0413"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker3",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-6-hdmtq",
+                "namespace": "hpc",
+                "resourceVersion": "1776",
+                "uid": "a448d1ff-4d6e-40bf-949e-7a8076522905"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:49Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:49Z",
+                "name": "normal11180621r1-6-hdmtq.18e90f72148b103c",
+                "namespace": "hpc",
+                "resourceVersion": "1787",
+                "uid": "284501b8-24f5-4482-ba07-6cc4087d1498"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker3",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:28Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-6",
+                "namespace": "hpc",
+                "resourceVersion": "1611",
+                "uid": "c3a96a83-e592-46d7-a1be-8d5d6a29cb18"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:28Z",
+            "message": "Job suspended",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:28Z",
+                "name": "normal11180621r1-6.18e90f6d32d8e9a8",
+                "namespace": "hpc",
+                "resourceVersion": "1612",
+                "uid": "394cec6e-b1f2-4d2b-b83e-0924456a2350"
+            },
+            "reason": "Suspended",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "CreatedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:28.181653Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-6",
+                "namespace": "hpc",
+                "resourceVersion": "1611",
+                "uid": "c3a96a83-e592-46d7-a1be-8d5d6a29cb18"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Created Workload: hpc/job-normal11180621r1-6-bfb90",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:28Z",
+                "name": "normal11180621r1-6.18e90f6d33f8fe83",
+                "namespace": "hpc",
+                "resourceVersion": "1615",
+                "uid": "857482ba-1d37-4ed5-b8c7-590edd29110f"
+            },
+            "reason": "CreatedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Started",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:48.401451Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-6",
+                "namespace": "hpc",
+                "resourceVersion": "1768",
+                "uid": "c3a96a83-e592-46d7-a1be-8d5d6a29cb18"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by clusterQueue hpc-queue",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:48Z",
+                "name": "normal11180621r1-6.18e90f71e92a92ef",
+                "namespace": "hpc",
+                "resourceVersion": "1770",
+                "uid": "c3dbba07-4e16-447e-b609-06b65591a6b3"
+            },
+            "reason": "Started",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:48Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-6",
+                "namespace": "hpc",
+                "resourceVersion": "1768",
+                "uid": "c3a96a83-e592-46d7-a1be-8d5d6a29cb18"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:48Z",
+            "message": "Created pod: normal11180621r1-6-hdmtq",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:48Z",
+                "name": "normal11180621r1-6.18e90f71eb234d07",
+                "namespace": "hpc",
+                "resourceVersion": "1774",
+                "uid": "0f3d795b-0e86-4ce7-8244-04f047be2f0f"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:48Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-6",
+                "namespace": "hpc",
+                "resourceVersion": "1768",
+                "uid": "c3a96a83-e592-46d7-a1be-8d5d6a29cb18"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:48Z",
+            "message": "Job resumed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:48Z",
+                "name": "normal11180621r1-6.18e90f71eb23c46b",
+                "namespace": "hpc",
+                "resourceVersion": "1777",
+                "uid": "69f9b0ee-0f9a-4a25-996c-043a073b1d26"
+            },
+            "reason": "Resumed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:12Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-6",
+                "namespace": "hpc",
+                "resourceVersion": "1925",
+                "uid": "c3a96a83-e592-46d7-a1be-8d5d6a29cb18"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:12Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:12Z",
+                "name": "normal11180621r1-6.18e90f777ef2ab35",
+                "namespace": "hpc",
+                "resourceVersion": "1929",
+                "uid": "9db4451c-dd4f-494c-ad87-a4c288cd0094"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "FinishedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:12.405238Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-6",
+                "namespace": "hpc",
+                "resourceVersion": "1928",
+                "uid": "c3a96a83-e592-46d7-a1be-8d5d6a29cb18"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Workload 'hpc/job-normal11180621r1-6-bfb90' is declared finished",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:12Z",
+                "name": "normal11180621r1-6.18e90f777fe7520d",
+                "namespace": "hpc",
+                "resourceVersion": "1982",
+                "uid": "b4e736c6-80dd-4391-b571-84921cd3afba"
+            },
+            "reason": "FinishedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "series": {
+                "count": 2,
+                "lastObservedTime": "2026-11-18T06:22:12.405645Z"
+            },
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:09Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "normal11180621r1-7-kw6h8",
+                "namespace": "hpc",
+                "resourceVersion": "1869",
+                "uid": "e78cb3d9-7d4d-4f1c-bbdf-e65a038d26f5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:09Z",
+            "message": "Successfully assigned hpc/normal11180621r1-7-kw6h8 to hpc-worker2",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:09Z",
+                "name": "normal11180621r1-7-kw6h8.18e90f76d1e258b2",
+                "namespace": "hpc",
+                "resourceVersion": "1874",
+                "uid": "3f486158-5fe2-4650-923b-a1202c8206c5"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:09Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-7-kw6h8",
+                "namespace": "hpc",
+                "resourceVersion": "1871",
+                "uid": "e78cb3d9-7d4d-4f1c-bbdf-e65a038d26f5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:09Z",
+            "message": "Container image \"hpc-compute:local\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:09Z",
+                "name": "normal11180621r1-7-kw6h8.18e90f76f0046c85",
+                "namespace": "hpc",
+                "resourceVersion": "1878",
+                "uid": "9fc01227-e869-49c0-bc8a-048f3bce6798"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker2",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-7-kw6h8",
+                "namespace": "hpc",
+                "resourceVersion": "1871",
+                "uid": "e78cb3d9-7d4d-4f1c-bbdf-e65a038d26f5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:10Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "normal11180621r1-7-kw6h8.18e90f76f2fb2dad",
+                "namespace": "hpc",
+                "resourceVersion": "1879",
+                "uid": "c273120f-9c2f-46bf-be00-eb1d3802aead"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker2",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-7-kw6h8",
+                "namespace": "hpc",
+                "resourceVersion": "1871",
+                "uid": "e78cb3d9-7d4d-4f1c-bbdf-e65a038d26f5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:10Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "normal11180621r1-7-kw6h8.18e90f76f94e0e0c",
+                "namespace": "hpc",
+                "resourceVersion": "1886",
+                "uid": "73501dee-1d10-422f-8b50-c2a07a0f9b8e"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker2",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:29Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-7",
+                "namespace": "hpc",
+                "resourceVersion": "1622",
+                "uid": "89a2061d-99f7-4068-8f39-ce6236958e80"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:29Z",
+            "message": "Job suspended",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:29Z",
+                "name": "normal11180621r1-7.18e90f6d84160345",
+                "namespace": "hpc",
+                "resourceVersion": "1623",
+                "uid": "2b657e68-16af-45f5-8574-86b4d28ec042"
+            },
+            "reason": "Suspended",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "CreatedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:29.547399Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-7",
+                "namespace": "hpc",
+                "resourceVersion": "1622",
+                "uid": "89a2061d-99f7-4068-8f39-ce6236958e80"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Created Workload: hpc/job-normal11180621r1-7-cb43d",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:29Z",
+                "name": "normal11180621r1-7.18e90f6d85609826",
+                "namespace": "hpc",
+                "resourceVersion": "1626",
+                "uid": "320edea4-9095-48c0-90ef-38731101c968"
+            },
+            "reason": "CreatedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Started",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:09.446434Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-7",
+                "namespace": "hpc",
+                "resourceVersion": "1865",
+                "uid": "89a2061d-99f7-4068-8f39-ce6236958e80"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by clusterQueue hpc-queue",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:09Z",
+                "name": "normal11180621r1-7.18e90f76cf8b7be4",
+                "namespace": "hpc",
+                "resourceVersion": "1868",
+                "uid": "71af2d7f-7b70-4580-8cde-440ca1688ec3"
+            },
+            "reason": "Started",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:09Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-7",
+                "namespace": "hpc",
+                "resourceVersion": "1865",
+                "uid": "89a2061d-99f7-4068-8f39-ce6236958e80"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:09Z",
+            "message": "Created pod: normal11180621r1-7-kw6h8",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:09Z",
+                "name": "normal11180621r1-7.18e90f76d14f0542",
+                "namespace": "hpc",
+                "resourceVersion": "1870",
+                "uid": "0af92a30-091e-4ff5-87a4-8eeeb00f3992"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:09Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-7",
+                "namespace": "hpc",
+                "resourceVersion": "1865",
+                "uid": "89a2061d-99f7-4068-8f39-ce6236958e80"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:09Z",
+            "message": "Job resumed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:09Z",
+                "name": "normal11180621r1-7.18e90f76d14f75bf",
+                "namespace": "hpc",
+                "resourceVersion": "1873",
+                "uid": "6cebac05-fc53-41d2-a611-6cc4a2803ef9"
+            },
+            "reason": "Resumed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:33Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-7",
+                "namespace": "hpc",
+                "resourceVersion": "2010",
+                "uid": "89a2061d-99f7-4068-8f39-ce6236958e80"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:33Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:33Z",
+                "name": "normal11180621r1-7.18e90f7c6583bde8",
+                "namespace": "hpc",
+                "resourceVersion": "2014",
+                "uid": "6921617a-2afb-4046-8e64-2e5d79d6e279"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "FinishedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:33.454498Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-7",
+                "namespace": "hpc",
+                "resourceVersion": "2013",
+                "uid": "89a2061d-99f7-4068-8f39-ce6236958e80"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Workload 'hpc/job-normal11180621r1-7-cb43d' is declared finished",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:33Z",
+                "name": "normal11180621r1-7.18e90f7c66898aff",
+                "namespace": "hpc",
+                "resourceVersion": "2016",
+                "uid": "f8fdbebb-ed87-43e1-a4fc-12bc2bbacab1"
+            },
+            "reason": "FinishedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "normal11180621r1-8-j6rhr",
+                "namespace": "hpc",
+                "resourceVersion": "1897",
+                "uid": "2524ac58-e85b-4391-800a-f901afea1c35"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:10Z",
+            "message": "Successfully assigned hpc/normal11180621r1-8-j6rhr to hpc-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "normal11180621r1-8-j6rhr.18e90f7702395eca",
+                "namespace": "hpc",
+                "resourceVersion": "1902",
+                "uid": "194ddf92-53a0-4579-9671-1a5fbe87bbda"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-8-j6rhr",
+                "namespace": "hpc",
+                "resourceVersion": "1898",
+                "uid": "2524ac58-e85b-4391-800a-f901afea1c35"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:10Z",
+            "message": "Container image \"hpc-compute:local\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "normal11180621r1-8-j6rhr.18e90f7720a81eb0",
+                "namespace": "hpc",
+                "resourceVersion": "1914",
+                "uid": "d3456c8c-364b-4dfc-994c-e7b157944228"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-8-j6rhr",
+                "namespace": "hpc",
+                "resourceVersion": "1898",
+                "uid": "2524ac58-e85b-4391-800a-f901afea1c35"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:10Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "normal11180621r1-8-j6rhr.18e90f7723691cc6",
+                "namespace": "hpc",
+                "resourceVersion": "1915",
+                "uid": "c2d10190-3a44-4872-92e4-f72dfad0f1f8"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-8-j6rhr",
+                "namespace": "hpc",
+                "resourceVersion": "1898",
+                "uid": "2524ac58-e85b-4391-800a-f901afea1c35"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:10Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "normal11180621r1-8-j6rhr.18e90f7728197a85",
+                "namespace": "hpc",
+                "resourceVersion": "1916",
+                "uid": "caf82934-9055-4b20-9f22-99604e8cdba1"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:30Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-8",
+                "namespace": "hpc",
+                "resourceVersion": "1634",
+                "uid": "aa8f4a9f-1077-4c86-8bf2-7c647cbf95c0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:30Z",
+            "message": "Job suspended",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:30Z",
+                "name": "normal11180621r1-8.18e90f6dd231b86a",
+                "namespace": "hpc",
+                "resourceVersion": "1635",
+                "uid": "d317b499-52a4-40a2-9e12-7ea98e1198e8"
+            },
+            "reason": "Suspended",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "CreatedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:30.851347Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-8",
+                "namespace": "hpc",
+                "resourceVersion": "1634",
+                "uid": "aa8f4a9f-1077-4c86-8bf2-7c647cbf95c0"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Created Workload: hpc/job-normal11180621r1-8-54096",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:30Z",
+                "name": "normal11180621r1-8.18e90f6dd3194be8",
+                "namespace": "hpc",
+                "resourceVersion": "1638",
+                "uid": "6253f1a7-3b69-4b97-99da-f5b2cca0dede"
+            },
+            "reason": "CreatedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Started",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:10.274730Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-8",
+                "namespace": "hpc",
+                "resourceVersion": "1893",
+                "uid": "aa8f4a9f-1077-4c86-8bf2-7c647cbf95c0"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by clusterQueue hpc-queue",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "normal11180621r1-8.18e90f7700ea51cc",
+                "namespace": "hpc",
+                "resourceVersion": "1896",
+                "uid": "c4fafec9-88b6-481a-a898-0d3925b19d1f"
+            },
+            "reason": "Started",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:10Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-8",
+                "namespace": "hpc",
+                "resourceVersion": "1893",
+                "uid": "aa8f4a9f-1077-4c86-8bf2-7c647cbf95c0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:10Z",
+            "message": "Created pod: normal11180621r1-8-j6rhr",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "normal11180621r1-8.18e90f7701b264eb",
+                "namespace": "hpc",
+                "resourceVersion": "1899",
+                "uid": "9ec81c32-20fd-4e10-8d9a-03c271daa6d4"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:10Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-8",
+                "namespace": "hpc",
+                "resourceVersion": "1893",
+                "uid": "aa8f4a9f-1077-4c86-8bf2-7c647cbf95c0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:10Z",
+            "message": "Job resumed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:10Z",
+                "name": "normal11180621r1-8.18e90f7701b3713c",
+                "namespace": "hpc",
+                "resourceVersion": "1901",
+                "uid": "e38cdcdc-02e0-4755-a2c2-654c2225787f"
+            },
+            "reason": "Resumed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:34Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-8",
+                "namespace": "hpc",
+                "resourceVersion": "2019",
+                "uid": "aa8f4a9f-1077-4c86-8bf2-7c647cbf95c0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:34Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:34Z",
+                "name": "normal11180621r1-8.18e90f7c9111455b",
+                "namespace": "hpc",
+                "resourceVersion": "2023",
+                "uid": "0965ba51-6add-44d9-b6aa-7a63e8243372"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "FinishedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:34.181052Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-8",
+                "namespace": "hpc",
+                "resourceVersion": "2022",
+                "uid": "aa8f4a9f-1077-4c86-8bf2-7c647cbf95c0"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Workload 'hpc/job-normal11180621r1-8-54096' is declared finished",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:34Z",
+                "name": "normal11180621r1-8.18e90f7c91d7db4d",
+                "namespace": "hpc",
+                "resourceVersion": "2025",
+                "uid": "c0645972-72f8-485c-bcce-fad0a27b3c11"
+            },
+            "reason": "FinishedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:12Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "normal11180621r1-9-p2dtj",
+                "namespace": "hpc",
+                "resourceVersion": "1938",
+                "uid": "19c28735-87cf-4023-a770-a4c87662f2a5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:12Z",
+            "message": "Successfully assigned hpc/normal11180621r1-9-p2dtj to hpc-worker3",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:12Z",
+                "name": "normal11180621r1-9-p2dtj.18e90f77864b502c",
+                "namespace": "hpc",
+                "resourceVersion": "1943",
+                "uid": "1af3ab4b-0c42-4759-8ef4-8476df4459e1"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:13Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-9-p2dtj",
+                "namespace": "hpc",
+                "resourceVersion": "1940",
+                "uid": "19c28735-87cf-4023-a770-a4c87662f2a5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:13Z",
+            "message": "Container image \"hpc-compute:local\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:13Z",
+                "name": "normal11180621r1-9-p2dtj.18e90f77a3edb0cb",
+                "namespace": "hpc",
+                "resourceVersion": "1946",
+                "uid": "2f390dfd-5429-411c-af2b-1bd80b1baf88"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker3",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:13Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-9-p2dtj",
+                "namespace": "hpc",
+                "resourceVersion": "1940",
+                "uid": "19c28735-87cf-4023-a770-a4c87662f2a5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:13Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:13Z",
+                "name": "normal11180621r1-9-p2dtj.18e90f77a6e2f765",
+                "namespace": "hpc",
+                "resourceVersion": "1947",
+                "uid": "b0fc0080-cd1b-467a-8f6b-b09d627dd1ca"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker3",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:13Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{compute}",
+                "kind": "Pod",
+                "name": "normal11180621r1-9-p2dtj",
+                "namespace": "hpc",
+                "resourceVersion": "1940",
+                "uid": "19c28735-87cf-4023-a770-a4c87662f2a5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:13Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:13Z",
+                "name": "normal11180621r1-9-p2dtj.18e90f77ac5c50ed",
+                "namespace": "hpc",
+                "resourceVersion": "1948",
+                "uid": "97089b09-aa64-4ddd-95d1-01cc4f86f324"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpc-worker3",
+            "source": {
+                "component": "kubelet",
+                "host": "hpc-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:21:32Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-9",
+                "namespace": "hpc",
+                "resourceVersion": "1644",
+                "uid": "3dd66ed4-d42d-4b30-855c-1255b3d05c2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:21:32Z",
+            "message": "Job suspended",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:32Z",
+                "name": "normal11180621r1-9.18e90f6e1f9c5e93",
+                "namespace": "hpc",
+                "resourceVersion": "1645",
+                "uid": "9893f20d-ddd5-4426-ae11-7961f1eb9b3c"
+            },
+            "reason": "Suspended",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "CreatedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:21:32.152679Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-9",
+                "namespace": "hpc",
+                "resourceVersion": "1644",
+                "uid": "3dd66ed4-d42d-4b30-855c-1255b3d05c2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Created Workload: hpc/job-normal11180621r1-9-d3f7e",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:21:32Z",
+                "name": "normal11180621r1-9.18e90f6e20aa08b2",
+                "namespace": "hpc",
+                "resourceVersion": "1648",
+                "uid": "e6a1905f-3be8-4d81-ac82-ab87a4a7af43"
+            },
+            "reason": "CreatedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Started",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:12.487620Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-9",
+                "namespace": "hpc",
+                "resourceVersion": "1936",
+                "uid": "3dd66ed4-d42d-4b30-855c-1255b3d05c2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Admitted by clusterQueue hpc-queue",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:12Z",
+                "name": "normal11180621r1-9.18e90f7784d0606a",
+                "namespace": "hpc",
+                "resourceVersion": "1937",
+                "uid": "bb63b4e6-948f-46fd-bcdb-199906e35c0e"
+            },
+            "reason": "Started",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:12Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-9",
+                "namespace": "hpc",
+                "resourceVersion": "1936",
+                "uid": "3dd66ed4-d42d-4b30-855c-1255b3d05c2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:12Z",
+            "message": "Created pod: normal11180621r1-9-p2dtj",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:12Z",
+                "name": "normal11180621r1-9.18e90f7785853d7b",
+                "namespace": "hpc",
+                "resourceVersion": "1939",
+                "uid": "80708dd0-9a05-4ef0-9786-5771cef9fa90"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:12Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-9",
+                "namespace": "hpc",
+                "resourceVersion": "1936",
+                "uid": "3dd66ed4-d42d-4b30-855c-1255b3d05c2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:12Z",
+            "message": "Job resumed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:12Z",
+                "name": "normal11180621r1-9.18e90f778585a8e3",
+                "namespace": "hpc",
+                "resourceVersion": "1942",
+                "uid": "c9775638-9907-43d4-bce6-724f624897c0"
+            },
+            "reason": "Resumed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-18T06:22:36Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-9",
+                "namespace": "hpc",
+                "resourceVersion": "2036",
+                "uid": "3dd66ed4-d42d-4b30-855c-1255b3d05c2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-18T06:22:36Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:36Z",
+                "name": "normal11180621r1-9.18e90f7d18586231",
+                "namespace": "hpc",
+                "resourceVersion": "2040",
+                "uid": "cb361c26-67c3-4fac-8fc9-75fb5d70c8af"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "FinishedWorkload",
+            "apiVersion": "v1",
+            "eventTime": "2026-11-18T06:22:36.450490Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "normal11180621r1-9",
+                "namespace": "hpc",
+                "resourceVersion": "2039",
+                "uid": "3dd66ed4-d42d-4b30-855c-1255b3d05c2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Workload 'hpc/job-normal11180621r1-9-d3f7e' is declared finished",
+            "metadata": {
+                "creationTimestamp": "2026-11-18T06:22:36Z",
+                "name": "normal11180621r1-9.18e90f7d191cbfc9",
+                "namespace": "hpc",
+                "resourceVersion": "2042",
+                "uid": "aded40ec-b404-4391-b53b-def36120f666"
+            },
+            "reason": "FinishedWorkload",
+            "reportingComponent": "batch/job-kueue-controller",
+            "reportingInstance": "batch/job-kueue-controller-kueue-controller-manager-855c87885f-d9j7x",
+            "source": {},
+            "type": "Normal"
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}
