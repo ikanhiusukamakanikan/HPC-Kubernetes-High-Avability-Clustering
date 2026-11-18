@@ -1,39 +1,69 @@
 # Panduan demo langsung
-## Yang harus dibuktikan
 
-| # | Klaim | Yang dilihat audiens | Waktu |
+Dokumen ini adalah skrip presentasi singkat untuk menunjukkan alur aplikasi dan skenario pemulihan. Jalankan dari root repository pada terminal Linux/WSL. Instalasi dependensi dan penjelasan konfigurasi lengkap tetap berada di [PANDUAN.md](PANDUAN.md).
+
+## Yang dibuktikan
+
+| # | Klaim | Yang dilihat audiens | Perkiraan waktu |
 |---|---|---|---|
-| 1 | Cluster sehat | Empat node Ready | 1 menit |
-| 2 | Pekerjaan berjalan dari awal sampai akhir | Submit, antrean, eksekusi, hasil terverifikasi | 2 menit |
-| 3 | Worker mati dan pekerjaan tetap selesai | Node NotReady, Pod pengganti di worker lain, Job Complete | 3 sampai 4 menit |
-| 4 | Ada bukti dari run nyata | Folder `results/`, 3 dari 3 pemulihan | 1 menit |
+| 1 | Cluster sehat | Satu head dan tiga worker `Ready` | 1 menit |
+| 2 | Job berjalan dari awal sampai akhir | Submit, antrean, Pod, dan hasil terverifikasi | 1 menit |
+| 3 | Worker mati tetapi Job tetap selesai | Worker `NotReady`, Pod pengganti, Job `Complete` | 3 sampai 4 menit |
+| 4 | Eksperimen formal sudah dijalankan | Ringkasan normal, FIFO, dan recovery | 1 menit |
 
 ## Persiapan
 
-1. `bash scripts/check.sh`, lalu `bash scripts/setup.sh` bila cluster belum ada (setup mengunduh image, beri waktu).
-2. `bash tests/smoke.sh`. Baris terakhir yang diharapkan: `Smoke test lulus: hasil prima 1..1000 = 168 tersimpan melalui NFS.`
-3. Latih seluruh demo kegagalan sekali, lalu hidupkan kembali worker.
-4. Bersihkan Job lama agar layar rapi: `kubectl -n hpc delete jobs -l app=hpc-compute --wait=true`.
-5. Rekam video layar satu run penuh sebagai cadangan.
-6. Pastikan SSH ke head sudah pernah dicoba (lihat `PANDUAN.md`); uji SSH belum tercatat di `results/`.
-7. Tutup notifikasi, besarkan font terminal (minimal 22 pt), dan colok daya.
+Jika cluster belum dibuat:
 
-## Tata letak terminal (3 panel)
+```bash
+bash scripts/check.sh
+bash scripts/setup.sh
+bash tests/smoke.sh
+```
 
-- **Panel A:** tempat mengetik perintah. Siapkan semua perintah dalam berkas teks dan salin-tempel.
-- **Panel B:** `watch -n 2 kubectl -n hpc get pods -o wide`, dan bila muat `watch -n 2 kubectl get nodes`.
-- **Panel C (opsional):** `bash scripts/collect.sh results/demo` untuk merekam bukti.
+Baris terakhir smoke test yang diharapkan:
 
-Di setiap panel:
+```text
+Smoke test lulus: hasil prima 1..1000 = 168 tersimpan melalui NFS.
+```
+
+Sebelum mulai demo, bersihkan Job lama dan siapkan direktori bukti yang unik:
 
 ```bash
 export KUBECONFIG="$PWD/.runtime/kubeconfig"
 alias k='kubectl --context kind-hpc'
+
+k -n hpc delete jobs -l app=hpc-compute --ignore-not-found --wait=true
+DEMO_RUN="results/demo-$(date -u +%Y%m%dT%H%M%SZ)"
+printf '%s\n' "$DEMO_RUN" > .runtime/demo-run-path
+echo "Bukti demo: $DEMO_RUN"
 ```
 
-Hindari `source scripts/common.sh` di terminal interaktif: skrip itu mengaktifkan `set -euo pipefail`, sehingga satu perintah gagal dapat menutup terminal di depan audiens.
+## Tata letak terminal
 
-## Langkah 1: kesehatan cluster
+- **Panel A:** perintah utama.
+- **Panel B:** perubahan Pod dan node.
+- **Panel C:** collector bukti; boleh dilewati bila hanya melakukan presentasi singkat.
+
+Di Panel B:
+
+```bash
+export KUBECONFIG="$PWD/.runtime/kubeconfig"
+watch -n 2 'kubectl --context kind-hpc -n hpc get pods -o wide; kubectl --context kind-hpc get nodes'
+```
+
+Di Panel C, bila ingin merekam demo:
+
+```bash
+export KUBECONFIG="$PWD/.runtime/kubeconfig"
+bash scripts/collect.sh "$(cat .runtime/demo-run-path)"
+```
+
+Collector dihentikan dengan `Ctrl+C` setelah Job recovery selesai.
+
+## Langkah 1: tunjukkan kesehatan cluster
+
+Di Panel A:
 
 ```bash
 k get nodes -o wide
@@ -42,102 +72,177 @@ k -n hpc-system get pods
 k -n hpc get pvc
 ```
 
-Lulus bila satu control-plane dan tiga worker `Ready`, Pod Kueue dan NFS `Running`, dan PVC `shared` `Bound`.
+Yang harus terlihat:
 
-## Langkah 2: submit dan antrean
+- `hpc-control-plane` dan tiga worker berstatus `Ready`.
+- Controller Kueue dan NFS berstatus `Running`.
+- PVC `shared` berstatus `Bound`.
+
+## Langkah 2: submit satu Job
 
 ```bash
 JOB=$(bash scripts/hpc.sh submit --seconds 30)
-echo $JOB
+echo "$JOB"
 bash scripts/hpc.sh queue
 bash scripts/hpc.sh status
 ```
 
-Lulus bila nama Job tercetak, Workload muncul pada antrean, dan Pod dijadwalkan di salah satu worker.
+Output akan menampilkan nama Job, Workload pada antrean Kueue, dan Pod pada salah satu compute worker. Nama Job dan Pod dibuat dinamis, misalnya:
+
+```text
+prime-20261118143000-a1b2c3
+```
 
 ## Langkah 3: tunggu dan tampilkan hasil
 
 ```bash
-bash scripts/hpc.sh wait "$JOB"
-bash scripts/hpc.sh result "$JOB"
-```
-
-Lulus bila `wait` mencetak `Complete` dan hasil menampilkan `"verified": true`.
-
-## Langkah 4: demo kegagalan worker
-
-Gunakan Job **30 detik**, bukan 120 detik. Waktu mulai ulang tetap sekitar 145 detik, tetapi total menunggu turun dari sekitar 4,5 menit menjadi sekitar 3 menit. Sampaikan: "Eksperimen tercatat memakai Job 120 detik; demo langsung memakai 30 detik."
-
-```bash
-JOB=$(bash scripts/hpc.sh submit --name demo1 --seconds 30)
-k -n hpc wait --for=condition=Ready pod -l "hpc.local/job=$JOB" --timeout=180s
-NODE=$(k -n hpc get pod -l "hpc.local/job=$JOB" -o jsonpath='{.items[0].spec.nodeName}')
-echo "Job berjalan di: $NODE"
-sleep 5
-bash scripts/fail-worker.sh "$NODE" results/demo
-```
-
-`fail-worker.sh` hanya menerima compute node dan mematikan container dengan `docker stop --time 0`, setara mencabut listrik. Selama menunggu, narasikan panel B dengan garis waktu dari run `recovery-01`:
-
-| Sekitar | Yang terlihat | Penjelasan |
-|---|---|---|
-| 0 s | Container worker dihentikan | Worker yang menjalankan Job dimatikan paksa |
-| 49 s | Node `NotReady` | Control plane menyadari node diam |
-| 79 s | Pod ditandai dihapus, tertahan `Terminating` | Toleration 30 s habis; tidak ada yang bisa memastikan Pod berhenti |
-| 144 s | Pod dipaksa `Failed` | Kueue failure recovery setelah menunggu satu menit |
-| 145 s | Pod pengganti di worker lain | Job controller membuat pengganti, scheduler menempatkannya di worker sehat |
-
-Setelah Pod pengganti berjalan:
-
-```bash
-bash scripts/hpc.sh status
 bash scripts/hpc.sh wait "$JOB" --timeout 900
 bash scripts/hpc.sh result "$JOB"
 ```
 
-Lulus bila Pod pengganti berada di node **berbeda** dari `$NODE`, Job berakhir `Complete`, dan hasil `"verified": true`. Setelah Job selesai, hidupkan kembali worker:
+Output penting:
+
+```text
+prime-... Complete
+```
+
+Hasil JSON harus memuat:
+
+```json
+{
+  "status": "Succeeded",
+  "prime_count": 5133,
+  "expected_count": 5133,
+  "verified": true
+}
+```
+
+## Langkah 4: demo worker mati
+
+Gunakan Job 30 detik agar demonstrasi lebih singkat. Eksperimen formal memakai Job 120 detik, tetapi mekanisme pemulihannya sama.
+
+```bash
+RECOVERY_JOB=$(bash scripts/hpc.sh submit --name demo-recovery --seconds 30)
+k -n hpc wait --for=condition=Ready pod \
+  -l "hpc.local/job=$RECOVERY_JOB" --timeout=180s
+
+NODE=$(k -n hpc get pod -l "hpc.local/job=$RECOVERY_JOB" \
+  -o jsonpath='{.items[0].spec.nodeName}')
+echo "Job $RECOVERY_JOB berjalan pada $NODE"
+
+sleep 5
+bash scripts/fail-worker.sh "$NODE" "$(cat .runtime/demo-run-path)"
+```
+
+Output penghentian:
+
+```text
+Worker berhenti. Jangan start kembali sebelum pekerjaan pengganti berhasil.
+```
+
+Di Panel B, jelaskan alur yang terlihat:
+
+1. Worker yang menjalankan Job berubah menjadi `NotReady`.
+2. Pod awal berhenti atau tertahan `Terminating`.
+3. Kueue menandai percobaan lama gagal setelah masa tunggu recovery.
+4. Job controller membuat Pod baru pada worker yang sehat.
+5. Nama Job tetap sama, tetapi nama Pod, UID, dan worker berubah.
+
+Pada kampanye yang tersimpan, Pod pengganti mulai sekitar 142 sampai 147 detik setelah worker dimatikan. Nilai tersebut adalah hasil pengukuran, bukan SLA.
+
+## Langkah 5: buktikan Job pulih
+
+```bash
+bash scripts/hpc.sh status
+bash scripts/hpc.sh wait "$RECOVERY_JOB" --timeout 900
+bash scripts/hpc.sh result "$RECOVERY_JOB"
+```
+
+Demo lulus bila:
+
+- Pod pengganti berjalan di node berbeda dari `$NODE`.
+- Job yang sama berakhir `Complete`.
+- Hasil menampilkan `"verified": true`.
+
+Setelah Job selesai, hidupkan kembali worker lama:
 
 ```bash
 bash scripts/restore-worker.sh "$NODE"
 ```
 
-## Langkah 5: tunjukkan bukti tercatat
+Output akhirnya akan menunjukkan node kembali `Ready`.
+
+## Langkah 6: tunjukkan bukti eksperimen formal
 
 ```bash
-cat results/recovery-01/recovery.csv
-cat results/recovery-01/summary.json
-ls results/
+cat results/campaign-20261118T062115Z/campaign-summary.md
+cat results/campaign-20261118T062115Z/recovery-01/recovery.csv
 ```
 
-Angka kunci: 50 Job dikirim dan 50 Complete terverifikasi; distribusi normal 3 / 3 / 3 pada tiga run; urutan FIFO terjaga pada tiga run; pemulihan 3 dari 3, 145,3 sampai 146,9 s, di worker berbeda. Siapkan penjelasan bahwa CSV lama bersifat kumulatif (lihat `VALIDASI.md`); kampanye baru dari `scripts/run-campaign.sh` tidak kumulatif.
+Angka utama yang dapat disampaikan:
 
-## Daftar lulus atau gagal
+- 9 run: tiga normal, tiga FIFO, dan tiga recovery.
+- 48 dari 48 Job `Complete` dan terverifikasi.
+- Distribusi normal 3 / 3 / 3 pada setiap run.
+- Urutan admission FIFO terjaga pada setiap run.
+- Recovery berhasil 3 dari 3 kali.
+- Waktu recovery 142,212 sampai 146,672 detik.
 
-| Pemeriksaan | Perintah | Berfungsi bila |
-|---|---|---|
-| Node siap | `k get nodes` | Empat node `Ready` |
-| Penyimpanan | `k -n hpc get pvc` dan `bash tests/smoke.sh` | PVC `Bound`; smoke test mencetak baris 168 |
-| Antrean | `bash scripts/hpc.sh queue` | Workload terdaftar berurutan |
-| Job berjalan | `bash scripts/hpc.sh wait "$JOB"` | `Complete` |
-| Hasil benar | `bash scripts/hpc.sh result "$JOB"` | `verified: true` |
-| Pemulihan | Panel B dan `hpc.sh result` | Pod baru di node lain, Job `Complete` |
+Kampanye formal dapat dijalankan ulang di luar sesi presentasi dengan:
 
-## Bila terjadi masalah
+```bash
+bash scripts/run-campaign.sh --yes
+```
+
+Perintah tersebut memerlukan sekitar 30 menit, sehingga tidak perlu dijalankan saat demo langsung.
+
+## Menutup collector
+
+Jika Panel C digunakan, tunggu sekitar lima detik setelah Job selesai lalu tekan `Ctrl+C`. Setelah itu, di Panel A:
+
+```bash
+DEMO_RUN=$(cat .runtime/demo-run-path)
+python3 evaluation/summarize.py --run "$DEMO_RUN" --shared data/shared
+cat "$DEMO_RUN/recovery.csv"
+```
+
+Jika collector merekam Job biasa dan Job recovery dari awal demo, ringkasan ideal menunjukkan dua Job selesai, tiga percobaan, satu kasus kegagalan, dan satu pengganti terverifikasi.
+
+## Checklist lulus
+
+| Pemeriksaan | Lulus bila |
+|---|---|
+| Node | Empat node `Ready` sebelum kegagalan |
+| Kueue dan NFS | Pod sistem `Running`, PVC `Bound` |
+| Job biasa | `Complete` dan `verified: true` |
+| Worker mati | Worker berubah `NotReady` |
+| Recovery | Pod baru muncul di worker lain |
+| Hasil recovery | Job `Complete` dan `verified: true` |
+| Pemulihan node | Worker lama kembali `Ready` |
+
+## Jika ada masalah saat presentasi
 
 | Masalah | Tindakan |
 |---|---|
-| Cluster mati atau Pod tertahan | Putar video cadangan: "Ini rekaman run yang sama" |
-| `ErrImageNeverPull` | Image belum dimuat ke node; tidak bisa diperbaiki langsung, pakai video |
-| Pemulihan lebih lambat dari 145 s | Lanjutkan narasi dan sebut tiga run tercatat (145 sampai 147 s) |
-| Job mendarat di worker yang tidak diduga | Tidak masalah, `NODE` dibaca dari Pod |
-| Worker tidak mau hidup | `docker start NODE`, lalu `k wait --for=condition=Ready node/NODE --timeout=180s` |
-| Nama Job demo sudah ada | Pakai nama baru (`demo2`) atau `bash scripts/hpc.sh cancel demo1` |
+| Nama `demo-recovery` sudah ada | `bash scripts/hpc.sh cancel demo-recovery`, lalu ulangi submit |
+| Recovery lebih lama dari hasil tersimpan | Tetap tunggu sampai timeout; 142–147 detik bukan SLA |
+| Worker belum kembali | `docker start "$NODE"`, lalu `k wait --for=condition=Ready "node/$NODE" --timeout=180s` |
+| Pod `ErrImageNeverPull` | Image belum dimuat ke node; gunakan hasil kampanye tersimpan dan perbaiki setelah presentasi |
+| Collector menolak direktori | Jalankan ulang bagian persiapan untuk membuat nama `DEMO_RUN` baru |
 
 ## Pembersihan
 
+Hapus Job demo tanpa menghapus hasil NFS:
+
 ```bash
-bash scripts/hpc.sh cancel demo1
-bash scripts/restore-worker.sh "$NODE"   # bila belum dihidupkan
+bash scripts/hpc.sh cancel "$JOB" 2>/dev/null || true
+bash scripts/hpc.sh cancel "$RECOVERY_JOB" 2>/dev/null || true
 ```
 
-Untuk menghapus seluruh cluster: `bash scripts/teardown.sh --yes` (data NFS dan `results/` tetap).
+Untuk menghapus seluruh cluster setelah presentasi:
+
+```bash
+bash scripts/teardown.sh --yes
+```
+
+Direktori `data/shared/` dan `results/` tetap disimpan.
